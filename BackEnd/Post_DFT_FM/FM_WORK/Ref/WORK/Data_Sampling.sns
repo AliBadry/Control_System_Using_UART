@@ -1,0 +1,13 @@
+# struct_name_map
+buffer[0]
+buffer_reg[0]
+buffer[1]
+buffer_reg[1]
+buffer[2]
+buffer_reg[2]
+sample_time[0]
+sample_time_reg[0]
+sample_time[1]
+sample_time_reg[1]
+sample_time[2]
+sample_time_reg[2]

@@ -1,0 +1,240 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Mr. Crocodile/System/RX code
+vData_Sampling
+!s110 1664039279
+!i10b 1
+!s100 9`aMlG0BeiYfWOR3ONRT]2
+IX;b4c;K7<4oZ[f]oWRZ580
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1664039100
+8./Data_Sampling.v
+F./Data_Sampling.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1664039279.000000
+!s107 ./Data_Sampling.v|
+!s90 ./Data_Sampling.v|
+!i113 1
+Z3 tCvgOpt 0
+n@data_@sampling
+vdeserializer
+!s110 1664022209
+!i10b 1
+!s100 :ndCVLioW>Ic:<L1E:[@f2
+IbQYMHHR]bT3OS8o9Wm>nD1
+R1
+R0
+w1664022202
+8./deserializer.v
+F./deserializer.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664022209.000000
+!s107 ./deserializer.v|
+!s90 ./deserializer.v|
+!i113 1
+R3
+vDeserializer
+!s110 1664611696
+!i10b 1
+!s100 aP9HK2bF1S]C<`DgK[lWD1
+IQLF<G[hSzOYP1_^mb@o__2
+R1
+R0
+w1664611687
+8./Deserializer.v
+F./Deserializer.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664611696.000000
+!s107 ./Deserializer.v|
+!s90 ./Deserializer.v|
+!i113 1
+R3
+n@deserializer
+vEdge_Bit_Counter
+!s110 1664094743
+!i10b 1
+!s100 ZY^jmEE?Q2?ToDA8o]7AW3
+IlFAZ3gzJidC37J@BOHZ`A2
+R1
+R0
+w1664094719
+8./Edge_Bit_Counter.v
+F./Edge_Bit_Counter.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664094743.000000
+!s107 ./Edge_Bit_Counter.v|
+!s90 ./Edge_Bit_Counter.v|
+!i113 1
+R3
+n@edge_@bit_@counter
+vFSM
+!s110 1664988385
+!i10b 1
+!s100 niFABXjJOR[@ALU]CQQ:11
+IC[SL0k:Cm<SI:6hG`Xa;:1
+R1
+R0
+w1664988004
+8./FSM.v
+F./FSM.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664988385.000000
+!s107 ./FSM.v|
+!s90 ./FSM.v|
+!i113 1
+R3
+n@f@s@m
+vParity_Check
+!s110 1664986823
+!i10b 1
+!s100 =Ek295k?NKUaNJoQlCZaZ3
+I[Y517kP_Omk`LRS<6@D::2
+R1
+R0
+w1664986685
+8./Parity_Check.v
+F./Parity_Check.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664986823.000000
+!s107 ./Parity_Check.v|
+!s90 ./Parity_Check.v|
+!i113 1
+R3
+n@parity_@check
+vStart_Check
+!s110 1664531515
+!i10b 1
+!s100 ZWA@@1Jg?``I=kddnPU0m3
+I>S[N3<Q3o?>5=_S90BjcK1
+R1
+R0
+w1664531373
+8./Start_Check.v
+F./Start_Check.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664531515.000000
+!s107 ./Start_Check.v|
+!s90 ./Start_Check.v|
+!i113 1
+R3
+n@start_@check
+vStop_Check
+!s110 1664531520
+!i10b 1
+!s100 7LRO2Y[hnm`jZDm6IhY2L3
+I7O<__k2[a==`7?a^cYkLE0
+R1
+R0
+w1664531504
+8./Stop_Check.v
+F./Stop_Check.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664531520.000000
+!s107 ./Stop_Check.v|
+!s90 ./Stop_Check.v|
+!i113 1
+R3
+n@stop_@check
+vStrt_Check
+!s110 1663958203
+!i10b 1
+!s100 [dlzebT3ki_NH=CWhOcVf0
+IA6oZ`a16Of?GZ>K;HHb5S1
+R1
+R0
+w1663958181
+8./Strt_Check.v
+F./Strt_Check.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1663958203.000000
+!s107 ./Strt_Check.v|
+!s90 ./Strt_Check.v|
+!i113 1
+R3
+n@strt_@check
+vUART_RX
+!s110 1664986901
+!i10b 1
+!s100 [lTEnIj7;mQ[e?>nmBdTU3
+IQB:H:`2cl;;iHPZ@4Ij<>3
+R1
+R0
+w1664986890
+8./UART_RX.v
+F./UART_RX.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664986901.000000
+!s107 ./UART_RX.v|
+!s90 ./UART_RX.v|
+!i113 1
+R3
+n@u@a@r@t_@r@x
+vUART_RX_tb
+!s110 1664989439
+!i10b 1
+!s100 V`hVUc[UFa][z01W^d1aU0
+IK3ZR_L1>K>@z<2<8iW:;=1
+R1
+R0
+w1664989437
+8./UART_RX_tb.v
+F./UART_RX_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1664989439.000000
+!s107 ./UART_RX_tb.v|
+!s90 ./UART_RX_tb.v|
+!i113 1
+R3
+n@u@a@r@t_@r@x_tb

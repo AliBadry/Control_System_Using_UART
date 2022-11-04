@@ -1,0 +1,136 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Mr. Crocodile/System/TX code
+vFSM
+!s110 1664060400
+!i10b 1
+!s100 [Q45Pmz5]XHJ9UjLX5XHW2
+IV]1Hih:nhH<j]XW]ZNN5k3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1664060385
+8./FSM.v
+F./FSM.v
+L0 3
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1664060400.000000
+!s107 ./FSM.v|
+!s90 ./FSM.v|
+!i113 1
+Z3 tCvgOpt 0
+n@f@s@m
+vMUX4x1
+!s110 1664059814
+!i10b 1
+!s100 8@a1X`l9m;2NiGgceWnID2
+I9^O6VAa54Fn7dY]7Wf[^]0
+R1
+R0
+w1664041796
+8./MUX4x1.v
+F./MUX4x1.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664059814.000000
+!s107 ./MUX4x1.v|
+!s90 ./MUX4x1.v|
+!i113 1
+R3
+n@m@u@x4x1
+vParity_Calc
+!s110 1664059817
+!i10b 1
+!s100 VnM;P?3j?jbhX:Rc_0onH1
+Ice]4<4=K[<MZ[biXX7B:H3
+R1
+R0
+w1664041811
+8./Parity_Calc.v
+F./Parity_Calc.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664059817.000000
+!s107 ./Parity_Calc.v|
+!s90 ./Parity_Calc.v|
+!i113 1
+R3
+n@parity_@calc
+vSerializer
+!s110 1664281772
+!i10b 1
+!s100 YMYC9Te9_6?OcS9eMEQeD3
+ID1S0gH<jelzfXB]EgHa>=3
+R1
+R0
+w1664281765
+8./Serializer.v
+F./Serializer.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1664281772.000000
+!s107 ./Serializer.v|
+!s90 ./Serializer.v|
+!i113 1
+R3
+n@serializer
+vUART_TX
+!s110 1663936280
+!i10b 1
+!s100 ]k^R^b;AI=IW3P_h__fod3
+I3aGWcg4o17Idni0:<Hi@D3
+R1
+R0
+w1663936275
+8./UART_TX.v
+F./UART_TX.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1663936280.000000
+!s107 ./UART_TX.v|
+!s90 ./UART_TX.v|
+!i113 1
+R3
+n@u@a@r@t_@t@x
+vUART_TX_tb
+!s110 1664059821
+!i10b 1
+!s100 K^o]_8NZE`@z=;C=nnmN00
+I1?GVRT`9TmnfSd:@1>WmI1
+R1
+R0
+w1663937531
+8./UART_TX_tb.v
+F./UART_TX_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1664059821.000000
+!s107 ./UART_TX_tb.v|
+!s90 ./UART_TX_tb.v|
+!i113 1
+R3
+n@u@a@r@t_@t@x_tb

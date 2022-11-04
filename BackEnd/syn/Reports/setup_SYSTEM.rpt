@@ -1,0 +1,2503 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : SYS_TOP
+Version: K-2015.06
+Date   : Thu Oct 13 18:52:59 2022
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+  Startpoint: REG_FILE1/MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU1/U2/Arith_OUT_reg[0]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_FILE1/MEM_reg[1][6]/CK (DFFRQX2M)                   0.00       0.00 r
+  REG_FILE1/MEM_reg[1][6]/Q (DFFRQX2M)                    0.35       0.35 f
+  REG_FILE1/U17/Y (BUFX10M)                               0.26       0.61 f
+  REG_FILE1/Reg1[6] (Reg_File)                            0.00       0.61 f
+  ALU1/B[6] (ALU)                                         0.00       0.61 f
+  ALU1/U2/B[6] (Arithmatic_Unit_Width16)                  0.00       0.61 f
+  ALU1/U2/div_35/b[6] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00       0.61 f
+  ALU1/U2/div_35/U4/Y (NOR2X5M)                           0.49       1.10 r
+  ALU1/U2/div_35/U62/Y (AND3X1M)                          0.48       1.57 r
+  ALU1/U2/div_35/U14/Y (AND2X2M)                          0.45       2.02 r
+  ALU1/U2/div_35/U61/Y (AND4X1M)                          0.50       2.52 r
+  ALU1/U2/div_35/U6/Y (MX2X1M)                            0.43       2.95 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_6_1/CO (ADDFX2M)
+                                                          0.44       3.39 r
+  ALU1/U2/div_35/U13/Y (AND3X2M)                          0.47       3.86 r
+  ALU1/U2/div_35/U8/Y (MX2X1M)                            0.43       4.29 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_1/CO (ADDFX2M)
+                                                          0.45       4.74 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_2/CO (ADDFX2M)
+                                                          0.28       5.02 r
+  ALU1/U2/div_35/U10/Y (CLKAND2X4M)                       0.37       5.39 r
+  ALU1/U2/div_35/U58/Y (CLKMX2X2M)                        0.39       5.78 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_1/CO (ADDFX2M)
+                                                          0.45       6.23 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_2/CO (ADDFX2M)
+                                                          0.31       6.54 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_3/CO (ADDFX2M)
+                                                          0.31       6.84 f
+  ALU1/U2/div_35/U9/Y (CLKAND2X4M)                        0.43       7.27 f
+  ALU1/U2/div_35/U59/Y (CLKMX2X2M)                        0.45       7.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_1/CO (ADDFX2M)
+                                                          0.45       8.17 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_2/CO (ADDFX2M)
+                                                          0.31       8.48 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_3/CO (ADDFX2M)
+                                                          0.31       8.79 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_4/CO (ADDFX2M)
+                                                          0.31       9.09 f
+  ALU1/U2/div_35/U29/Y (CLKAND2X4M)                       0.49       9.58 f
+  ALU1/U2/div_35/U33/Y (MX2X1M)                           0.62      10.20 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_1/CO (ADDFX2M)
+                                                          0.45      10.65 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_2/CO (ADDFX2M)
+                                                          0.29      10.93 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_3/CO (ADDFX2M)
+                                                          0.29      11.22 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_4/CO (ADDFX2M)
+                                                          0.29      11.51 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_5/CO (ADDFX2M)
+                                                          0.39      11.90 r
+  ALU1/U2/div_35/U63/Y (AND2X1M)                          0.46      12.36 r
+  ALU1/U2/div_35/U60/Y (CLKMX2X2M)                        0.40      12.75 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_1/CO (ADDFX2M)
+                                                          0.45      13.20 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_2/CO (ADDFX2M)
+                                                          0.31      13.51 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_3/CO (ADDFX2M)
+                                                          0.31      13.82 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_4/CO (ADDFX2M)
+                                                          0.31      14.13 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_5/CO (ADDFX2M)
+                                                          0.31      14.44 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_6/CO (ADDFX2M)
+                                                          0.31      14.74 f
+  ALU1/U2/div_35/U12/Y (CLKAND2X6M)                       0.43      15.18 f
+  ALU1/U2/div_35/U35/Y (MX2XLM)                           0.49      15.67 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_1/CO (ADDFX2M)
+                                                          0.43      16.10 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_2/CO (ADDFX2M)
+                                                          0.31      16.41 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_3/CO (ADDFX2M)
+                                                          0.31      16.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_4/CO (ADDFX2M)
+                                                          0.31      17.03 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_5/CO (ADDFX2M)
+                                                          0.31      17.34 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_6/CO (ADDFX2M)
+                                                          0.31      17.65 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_7/CO (ADDFX2M)
+                                                          0.30      17.95 f
+  ALU1/U2/div_35/quotient[0] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00      17.95 f
+  ALU1/U2/U3/Y (AO22X1M)                                  0.35      18.30 f
+  ALU1/U2/U5/Y (OR2X2M)                                   0.27      18.57 f
+  ALU1/U2/Arith_OUT_reg[0]/D (DFFRQX2M)                   0.00      18.57 f
+  data arrival time                                                 18.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  ALU1/U2/Arith_OUT_reg[0]/CK (DFFRQX2M)                  0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                -18.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.30
+
+
+  Startpoint: REG_FILE1/MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU1/U2/Carry_OUT_reg
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_FILE1/MEM_reg[1][6]/CK (DFFRQX2M)                   0.00       0.00 r
+  REG_FILE1/MEM_reg[1][6]/Q (DFFRQX2M)                    0.35       0.35 f
+  REG_FILE1/U17/Y (BUFX10M)                               0.26       0.61 f
+  REG_FILE1/Reg1[6] (Reg_File)                            0.00       0.61 f
+  ALU1/B[6] (ALU)                                         0.00       0.61 f
+  ALU1/U2/B[6] (Arithmatic_Unit_Width16)                  0.00       0.61 f
+  ALU1/U2/div_35/b[6] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00       0.61 f
+  ALU1/U2/div_35/U4/Y (NOR2X5M)                           0.49       1.10 r
+  ALU1/U2/div_35/U62/Y (AND3X1M)                          0.48       1.57 r
+  ALU1/U2/div_35/U14/Y (AND2X2M)                          0.45       2.02 r
+  ALU1/U2/div_35/U61/Y (AND4X1M)                          0.50       2.52 r
+  ALU1/U2/div_35/U6/Y (MX2X1M)                            0.43       2.95 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_6_1/CO (ADDFX2M)
+                                                          0.44       3.39 r
+  ALU1/U2/div_35/U13/Y (AND3X2M)                          0.47       3.86 r
+  ALU1/U2/div_35/U8/Y (MX2X1M)                            0.43       4.29 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_1/CO (ADDFX2M)
+                                                          0.45       4.74 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_2/CO (ADDFX2M)
+                                                          0.28       5.02 r
+  ALU1/U2/div_35/U10/Y (CLKAND2X4M)                       0.37       5.39 r
+  ALU1/U2/div_35/U58/Y (CLKMX2X2M)                        0.39       5.78 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_1/CO (ADDFX2M)
+                                                          0.45       6.23 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_2/CO (ADDFX2M)
+                                                          0.31       6.54 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_3/CO (ADDFX2M)
+                                                          0.31       6.84 f
+  ALU1/U2/div_35/U9/Y (CLKAND2X4M)                        0.43       7.27 f
+  ALU1/U2/div_35/U59/Y (CLKMX2X2M)                        0.45       7.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_1/CO (ADDFX2M)
+                                                          0.45       8.17 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_2/CO (ADDFX2M)
+                                                          0.31       8.48 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_3/CO (ADDFX2M)
+                                                          0.31       8.79 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_4/CO (ADDFX2M)
+                                                          0.31       9.09 f
+  ALU1/U2/div_35/U29/Y (CLKAND2X4M)                       0.49       9.58 f
+  ALU1/U2/div_35/U33/Y (MX2X1M)                           0.62      10.20 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_1/CO (ADDFX2M)
+                                                          0.45      10.65 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_2/CO (ADDFX2M)
+                                                          0.29      10.93 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_3/CO (ADDFX2M)
+                                                          0.29      11.22 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_4/CO (ADDFX2M)
+                                                          0.29      11.51 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_5/CO (ADDFX2M)
+                                                          0.39      11.90 r
+  ALU1/U2/div_35/U63/Y (AND2X1M)                          0.46      12.36 r
+  ALU1/U2/div_35/U60/Y (CLKMX2X2M)                        0.40      12.75 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_1/CO (ADDFX2M)
+                                                          0.45      13.20 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_2/CO (ADDFX2M)
+                                                          0.31      13.51 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_3/CO (ADDFX2M)
+                                                          0.31      13.82 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_4/CO (ADDFX2M)
+                                                          0.31      14.13 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_5/CO (ADDFX2M)
+                                                          0.31      14.44 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_6/CO (ADDFX2M)
+                                                          0.31      14.74 f
+  ALU1/U2/div_35/U12/Y (CLKAND2X6M)                       0.43      15.18 f
+  ALU1/U2/div_35/U35/Y (MX2XLM)                           0.49      15.67 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_1/CO (ADDFX2M)
+                                                          0.43      16.10 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_2/CO (ADDFX2M)
+                                                          0.31      16.41 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_3/CO (ADDFX2M)
+                                                          0.31      16.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_4/CO (ADDFX2M)
+                                                          0.31      17.03 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_5/CO (ADDFX2M)
+                                                          0.31      17.34 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_6/CO (ADDFX2M)
+                                                          0.31      17.65 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_7/CO (ADDFX2M)
+                                                          0.30      17.95 f
+  ALU1/U2/div_35/quotient[0] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00      17.95 f
+  ALU1/U2/U3/Y (AO22X1M)                                  0.35      18.30 f
+  ALU1/U2/U5/Y (OR2X2M)                                   0.27      18.57 f
+  ALU1/U2/Carry_OUT_reg/D (DFFRQX2M)                      0.00      18.57 f
+  data arrival time                                                 18.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  ALU1/U2/Carry_OUT_reg/CK (DFFRQX2M)                     0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                -18.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.30
+
+
+  Startpoint: REG_FILE1/MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU1/U2/Arith_OUT_reg[0]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_FILE1/MEM_reg[1][6]/CK (DFFRQX2M)                   0.00       0.00 r
+  REG_FILE1/MEM_reg[1][6]/Q (DFFRQX2M)                    0.35       0.35 f
+  REG_FILE1/U17/Y (BUFX10M)                               0.26       0.61 f
+  REG_FILE1/Reg1[6] (Reg_File)                            0.00       0.61 f
+  ALU1/B[6] (ALU)                                         0.00       0.61 f
+  ALU1/U2/B[6] (Arithmatic_Unit_Width16)                  0.00       0.61 f
+  ALU1/U2/div_35/b[6] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00       0.61 f
+  ALU1/U2/div_35/U4/Y (NOR2X5M)                           0.49       1.10 r
+  ALU1/U2/div_35/U62/Y (AND3X1M)                          0.48       1.57 r
+  ALU1/U2/div_35/U14/Y (AND2X2M)                          0.45       2.02 r
+  ALU1/U2/div_35/U61/Y (AND4X1M)                          0.50       2.52 r
+  ALU1/U2/div_35/U6/Y (MX2X1M)                            0.43       2.95 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_6_1/CO (ADDFX2M)
+                                                          0.44       3.39 r
+  ALU1/U2/div_35/U13/Y (AND3X2M)                          0.47       3.86 r
+  ALU1/U2/div_35/U8/Y (MX2X1M)                            0.43       4.29 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_1/CO (ADDFX2M)
+                                                          0.45       4.74 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_2/CO (ADDFX2M)
+                                                          0.28       5.02 r
+  ALU1/U2/div_35/U10/Y (CLKAND2X4M)                       0.37       5.39 r
+  ALU1/U2/div_35/U58/Y (CLKMX2X2M)                        0.39       5.78 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_1/CO (ADDFX2M)
+                                                          0.45       6.23 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_2/CO (ADDFX2M)
+                                                          0.31       6.54 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_3/CO (ADDFX2M)
+                                                          0.31       6.84 f
+  ALU1/U2/div_35/U9/Y (CLKAND2X4M)                        0.43       7.27 f
+  ALU1/U2/div_35/U59/Y (CLKMX2X2M)                        0.45       7.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_1/CO (ADDFX2M)
+                                                          0.45       8.17 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_2/CO (ADDFX2M)
+                                                          0.31       8.48 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_3/CO (ADDFX2M)
+                                                          0.31       8.79 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_4/CO (ADDFX2M)
+                                                          0.31       9.09 f
+  ALU1/U2/div_35/U29/Y (CLKAND2X4M)                       0.49       9.58 f
+  ALU1/U2/div_35/U33/Y (MX2X1M)                           0.62      10.20 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_1/CO (ADDFX2M)
+                                                          0.45      10.65 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_2/CO (ADDFX2M)
+                                                          0.29      10.93 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_3/CO (ADDFX2M)
+                                                          0.29      11.22 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_4/CO (ADDFX2M)
+                                                          0.29      11.51 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_5/CO (ADDFX2M)
+                                                          0.39      11.90 r
+  ALU1/U2/div_35/U63/Y (AND2X1M)                          0.46      12.36 r
+  ALU1/U2/div_35/U60/Y (CLKMX2X2M)                        0.40      12.75 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_1/CO (ADDFX2M)
+                                                          0.45      13.20 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_2/CO (ADDFX2M)
+                                                          0.31      13.51 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_3/CO (ADDFX2M)
+                                                          0.31      13.82 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_4/CO (ADDFX2M)
+                                                          0.31      14.13 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_5/CO (ADDFX2M)
+                                                          0.31      14.44 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_6/CO (ADDFX2M)
+                                                          0.31      14.74 f
+  ALU1/U2/div_35/U12/Y (CLKAND2X6M)                       0.43      15.18 f
+  ALU1/U2/div_35/U35/Y (MX2XLM)                           0.49      15.67 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_1/CO (ADDFX2M)
+                                                          0.43      16.10 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_2/CO (ADDFX2M)
+                                                          0.31      16.41 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_3/CO (ADDFX2M)
+                                                          0.31      16.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_4/CO (ADDFX2M)
+                                                          0.31      17.03 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_5/CO (ADDFX2M)
+                                                          0.31      17.34 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_6/CO (ADDFX2M)
+                                                          0.31      17.65 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_7/CO (ADDFX2M)
+                                                          0.30      17.95 f
+  ALU1/U2/div_35/quotient[0] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00      17.95 f
+  ALU1/U2/U3/Y (AO22X1M)                                  0.35      18.30 f
+  ALU1/U2/U5/Y (OR2X2M)                                   0.27      18.57 f
+  ALU1/U2/Arith_OUT_reg[0]/D (DFFRQX2M)                   0.00      18.57 f
+  data arrival time                                                 18.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  ALU1/U2/Arith_OUT_reg[0]/CK (DFFRQX2M)                  0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                -18.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.30
+
+
+  Startpoint: REG_FILE1/MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU1/U2/Carry_OUT_reg
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_FILE1/MEM_reg[1][6]/CK (DFFRQX2M)                   0.00       0.00 r
+  REG_FILE1/MEM_reg[1][6]/Q (DFFRQX2M)                    0.35       0.35 f
+  REG_FILE1/U17/Y (BUFX10M)                               0.26       0.61 f
+  REG_FILE1/Reg1[6] (Reg_File)                            0.00       0.61 f
+  ALU1/B[6] (ALU)                                         0.00       0.61 f
+  ALU1/U2/B[6] (Arithmatic_Unit_Width16)                  0.00       0.61 f
+  ALU1/U2/div_35/b[6] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00       0.61 f
+  ALU1/U2/div_35/U4/Y (NOR2X5M)                           0.49       1.10 r
+  ALU1/U2/div_35/U62/Y (AND3X1M)                          0.48       1.57 r
+  ALU1/U2/div_35/U14/Y (AND2X2M)                          0.45       2.02 r
+  ALU1/U2/div_35/U61/Y (AND4X1M)                          0.50       2.52 r
+  ALU1/U2/div_35/U6/Y (MX2X1M)                            0.43       2.95 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_6_1/CO (ADDFX2M)
+                                                          0.44       3.39 r
+  ALU1/U2/div_35/U13/Y (AND3X2M)                          0.47       3.86 r
+  ALU1/U2/div_35/U8/Y (MX2X1M)                            0.43       4.29 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_1/CO (ADDFX2M)
+                                                          0.45       4.74 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_2/CO (ADDFX2M)
+                                                          0.28       5.02 r
+  ALU1/U2/div_35/U10/Y (CLKAND2X4M)                       0.37       5.39 r
+  ALU1/U2/div_35/U58/Y (CLKMX2X2M)                        0.39       5.78 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_1/CO (ADDFX2M)
+                                                          0.45       6.23 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_2/CO (ADDFX2M)
+                                                          0.31       6.54 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_3/CO (ADDFX2M)
+                                                          0.31       6.84 f
+  ALU1/U2/div_35/U9/Y (CLKAND2X4M)                        0.43       7.27 f
+  ALU1/U2/div_35/U59/Y (CLKMX2X2M)                        0.45       7.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_1/CO (ADDFX2M)
+                                                          0.45       8.17 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_2/CO (ADDFX2M)
+                                                          0.31       8.48 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_3/CO (ADDFX2M)
+                                                          0.31       8.79 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_4/CO (ADDFX2M)
+                                                          0.31       9.09 f
+  ALU1/U2/div_35/U29/Y (CLKAND2X4M)                       0.49       9.58 f
+  ALU1/U2/div_35/U33/Y (MX2X1M)                           0.62      10.20 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_1/CO (ADDFX2M)
+                                                          0.45      10.65 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_2/CO (ADDFX2M)
+                                                          0.29      10.93 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_3/CO (ADDFX2M)
+                                                          0.29      11.22 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_4/CO (ADDFX2M)
+                                                          0.29      11.51 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_5/CO (ADDFX2M)
+                                                          0.39      11.90 r
+  ALU1/U2/div_35/U63/Y (AND2X1M)                          0.46      12.36 r
+  ALU1/U2/div_35/U60/Y (CLKMX2X2M)                        0.40      12.75 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_1/CO (ADDFX2M)
+                                                          0.45      13.20 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_2/CO (ADDFX2M)
+                                                          0.31      13.51 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_3/CO (ADDFX2M)
+                                                          0.31      13.82 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_4/CO (ADDFX2M)
+                                                          0.31      14.13 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_5/CO (ADDFX2M)
+                                                          0.31      14.44 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_6/CO (ADDFX2M)
+                                                          0.31      14.74 f
+  ALU1/U2/div_35/U12/Y (CLKAND2X6M)                       0.43      15.18 f
+  ALU1/U2/div_35/U35/Y (MX2XLM)                           0.49      15.67 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_1/CO (ADDFX2M)
+                                                          0.43      16.10 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_2/CO (ADDFX2M)
+                                                          0.31      16.41 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_3/CO (ADDFX2M)
+                                                          0.31      16.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_4/CO (ADDFX2M)
+                                                          0.31      17.03 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_5/CO (ADDFX2M)
+                                                          0.31      17.34 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_6/CO (ADDFX2M)
+                                                          0.31      17.65 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_7/CO (ADDFX2M)
+                                                          0.30      17.95 f
+  ALU1/U2/div_35/quotient[0] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00      17.95 f
+  ALU1/U2/U3/Y (AO22X1M)                                  0.35      18.30 f
+  ALU1/U2/U5/Y (OR2X2M)                                   0.27      18.57 f
+  ALU1/U2/Carry_OUT_reg/D (DFFRQX2M)                      0.00      18.57 f
+  data arrival time                                                 18.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  ALU1/U2/Carry_OUT_reg/CK (DFFRQX2M)                     0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                -18.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.30
+
+
+  Startpoint: REG_FILE1/MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU1/U2/Arith_OUT_reg[0]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_FILE1/MEM_reg[1][6]/CK (DFFRQX2M)                   0.00       0.00 r
+  REG_FILE1/MEM_reg[1][6]/Q (DFFRQX2M)                    0.35       0.35 f
+  REG_FILE1/U17/Y (BUFX10M)                               0.26       0.61 f
+  REG_FILE1/Reg1[6] (Reg_File)                            0.00       0.61 f
+  ALU1/B[6] (ALU)                                         0.00       0.61 f
+  ALU1/U2/B[6] (Arithmatic_Unit_Width16)                  0.00       0.61 f
+  ALU1/U2/div_35/b[6] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00       0.61 f
+  ALU1/U2/div_35/U4/Y (NOR2X5M)                           0.49       1.10 r
+  ALU1/U2/div_35/U62/Y (AND3X1M)                          0.48       1.57 r
+  ALU1/U2/div_35/U14/Y (AND2X2M)                          0.45       2.02 r
+  ALU1/U2/div_35/U61/Y (AND4X1M)                          0.50       2.52 r
+  ALU1/U2/div_35/U6/Y (MX2X1M)                            0.43       2.95 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_6_1/CO (ADDFX2M)
+                                                          0.44       3.39 r
+  ALU1/U2/div_35/U13/Y (AND3X2M)                          0.47       3.86 r
+  ALU1/U2/div_35/U8/Y (MX2X1M)                            0.43       4.29 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_1/CO (ADDFX2M)
+                                                          0.45       4.74 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_2/CO (ADDFX2M)
+                                                          0.28       5.02 r
+  ALU1/U2/div_35/U10/Y (CLKAND2X4M)                       0.37       5.39 r
+  ALU1/U2/div_35/U58/Y (CLKMX2X2M)                        0.39       5.78 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_1/CO (ADDFX2M)
+                                                          0.45       6.23 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_2/CO (ADDFX2M)
+                                                          0.31       6.54 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_3/CO (ADDFX2M)
+                                                          0.31       6.84 f
+  ALU1/U2/div_35/U9/Y (CLKAND2X4M)                        0.43       7.27 f
+  ALU1/U2/div_35/U59/Y (CLKMX2X2M)                        0.45       7.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_1/CO (ADDFX2M)
+                                                          0.45       8.17 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_2/CO (ADDFX2M)
+                                                          0.31       8.48 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_3/CO (ADDFX2M)
+                                                          0.31       8.79 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_4/CO (ADDFX2M)
+                                                          0.31       9.09 f
+  ALU1/U2/div_35/U29/Y (CLKAND2X4M)                       0.49       9.58 f
+  ALU1/U2/div_35/U33/Y (MX2X1M)                           0.62      10.20 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_1/CO (ADDFX2M)
+                                                          0.45      10.65 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_2/CO (ADDFX2M)
+                                                          0.29      10.93 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_3/CO (ADDFX2M)
+                                                          0.29      11.22 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_4/CO (ADDFX2M)
+                                                          0.29      11.51 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_5/CO (ADDFX2M)
+                                                          0.39      11.90 r
+  ALU1/U2/div_35/U63/Y (AND2X1M)                          0.46      12.36 r
+  ALU1/U2/div_35/U60/Y (CLKMX2X2M)                        0.40      12.75 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_1/CO (ADDFX2M)
+                                                          0.45      13.20 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_2/CO (ADDFX2M)
+                                                          0.31      13.51 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_3/CO (ADDFX2M)
+                                                          0.31      13.82 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_4/CO (ADDFX2M)
+                                                          0.31      14.13 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_5/CO (ADDFX2M)
+                                                          0.31      14.44 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_6/CO (ADDFX2M)
+                                                          0.31      14.74 f
+  ALU1/U2/div_35/U12/Y (CLKAND2X6M)                       0.43      15.18 f
+  ALU1/U2/div_35/U35/Y (MX2XLM)                           0.49      15.67 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_1/CO (ADDFX2M)
+                                                          0.43      16.10 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_2/CO (ADDFX2M)
+                                                          0.31      16.41 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_3/CO (ADDFX2M)
+                                                          0.31      16.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_4/CO (ADDFX2M)
+                                                          0.31      17.03 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_5/CO (ADDFX2M)
+                                                          0.31      17.34 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_6/CO (ADDFX2M)
+                                                          0.31      17.65 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_7/CO (ADDFX2M)
+                                                          0.30      17.95 f
+  ALU1/U2/div_35/quotient[0] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00      17.95 f
+  ALU1/U2/U3/Y (AO22X1M)                                  0.35      18.30 f
+  ALU1/U2/U5/Y (OR2X2M)                                   0.27      18.57 f
+  ALU1/U2/Arith_OUT_reg[0]/D (DFFRQX2M)                   0.00      18.57 f
+  data arrival time                                                 18.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  ALU1/U2/Arith_OUT_reg[0]/CK (DFFRQX2M)                  0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                -18.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.30
+
+
+  Startpoint: REG_FILE1/MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU1/U2/Arith_OUT_reg[0]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_FILE1/MEM_reg[1][6]/CK (DFFRQX2M)                   0.00       0.00 r
+  REG_FILE1/MEM_reg[1][6]/Q (DFFRQX2M)                    0.35       0.35 f
+  REG_FILE1/U17/Y (BUFX10M)                               0.26       0.61 f
+  REG_FILE1/Reg1[6] (Reg_File)                            0.00       0.61 f
+  ALU1/B[6] (ALU)                                         0.00       0.61 f
+  ALU1/U2/B[6] (Arithmatic_Unit_Width16)                  0.00       0.61 f
+  ALU1/U2/div_35/b[6] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00       0.61 f
+  ALU1/U2/div_35/U4/Y (NOR2X5M)                           0.49       1.10 r
+  ALU1/U2/div_35/U62/Y (AND3X1M)                          0.48       1.57 r
+  ALU1/U2/div_35/U14/Y (AND2X2M)                          0.45       2.02 r
+  ALU1/U2/div_35/U61/Y (AND4X1M)                          0.50       2.52 r
+  ALU1/U2/div_35/U6/Y (MX2X1M)                            0.43       2.95 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_6_1/CO (ADDFX2M)
+                                                          0.44       3.39 r
+  ALU1/U2/div_35/U13/Y (AND3X2M)                          0.47       3.86 r
+  ALU1/U2/div_35/U8/Y (MX2X1M)                            0.43       4.29 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_1/CO (ADDFX2M)
+                                                          0.45       4.74 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_2/CO (ADDFX2M)
+                                                          0.28       5.02 r
+  ALU1/U2/div_35/U10/Y (CLKAND2X4M)                       0.37       5.39 r
+  ALU1/U2/div_35/U58/Y (CLKMX2X2M)                        0.39       5.78 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_1/CO (ADDFX2M)
+                                                          0.45       6.23 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_2/CO (ADDFX2M)
+                                                          0.31       6.54 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_3/CO (ADDFX2M)
+                                                          0.31       6.84 f
+  ALU1/U2/div_35/U9/Y (CLKAND2X4M)                        0.43       7.27 f
+  ALU1/U2/div_35/U59/Y (CLKMX2X2M)                        0.45       7.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_1/CO (ADDFX2M)
+                                                          0.45       8.17 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_2/CO (ADDFX2M)
+                                                          0.31       8.48 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_3/CO (ADDFX2M)
+                                                          0.31       8.79 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_4/CO (ADDFX2M)
+                                                          0.31       9.09 f
+  ALU1/U2/div_35/U29/Y (CLKAND2X4M)                       0.49       9.58 f
+  ALU1/U2/div_35/U33/Y (MX2X1M)                           0.62      10.20 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_1/CO (ADDFX2M)
+                                                          0.45      10.65 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_2/CO (ADDFX2M)
+                                                          0.29      10.93 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_3/CO (ADDFX2M)
+                                                          0.29      11.22 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_4/CO (ADDFX2M)
+                                                          0.29      11.51 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_5/CO (ADDFX2M)
+                                                          0.39      11.90 r
+  ALU1/U2/div_35/U63/Y (AND2X1M)                          0.46      12.36 r
+  ALU1/U2/div_35/U60/Y (CLKMX2X2M)                        0.40      12.75 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_1/CO (ADDFX2M)
+                                                          0.45      13.20 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_2/CO (ADDFX2M)
+                                                          0.31      13.51 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_3/CO (ADDFX2M)
+                                                          0.31      13.82 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_4/CO (ADDFX2M)
+                                                          0.31      14.13 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_5/CO (ADDFX2M)
+                                                          0.31      14.44 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_6/CO (ADDFX2M)
+                                                          0.31      14.74 f
+  ALU1/U2/div_35/U12/Y (CLKAND2X6M)                       0.43      15.18 f
+  ALU1/U2/div_35/U35/Y (MX2XLM)                           0.49      15.67 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_1/CO (ADDFX2M)
+                                                          0.43      16.10 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_2/CO (ADDFX2M)
+                                                          0.31      16.41 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_3/CO (ADDFX2M)
+                                                          0.31      16.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_4/CO (ADDFX2M)
+                                                          0.31      17.03 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_5/CO (ADDFX2M)
+                                                          0.31      17.34 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_6/CO (ADDFX2M)
+                                                          0.31      17.65 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_7/CO (ADDFX2M)
+                                                          0.30      17.95 f
+  ALU1/U2/div_35/quotient[0] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00      17.95 f
+  ALU1/U2/U3/Y (AO22X1M)                                  0.35      18.30 f
+  ALU1/U2/U5/Y (OR2X2M)                                   0.27      18.57 f
+  ALU1/U2/Arith_OUT_reg[0]/D (DFFRQX2M)                   0.00      18.57 f
+  data arrival time                                                 18.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  ALU1/U2/Arith_OUT_reg[0]/CK (DFFRQX2M)                  0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                -18.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.30
+
+
+  Startpoint: REG_FILE1/MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU1/U2/Carry_OUT_reg
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_FILE1/MEM_reg[1][6]/CK (DFFRQX2M)                   0.00       0.00 r
+  REG_FILE1/MEM_reg[1][6]/Q (DFFRQX2M)                    0.35       0.35 f
+  REG_FILE1/U17/Y (BUFX10M)                               0.26       0.61 f
+  REG_FILE1/Reg1[6] (Reg_File)                            0.00       0.61 f
+  ALU1/B[6] (ALU)                                         0.00       0.61 f
+  ALU1/U2/B[6] (Arithmatic_Unit_Width16)                  0.00       0.61 f
+  ALU1/U2/div_35/b[6] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00       0.61 f
+  ALU1/U2/div_35/U4/Y (NOR2X5M)                           0.49       1.10 r
+  ALU1/U2/div_35/U62/Y (AND3X1M)                          0.48       1.57 r
+  ALU1/U2/div_35/U14/Y (AND2X2M)                          0.45       2.02 r
+  ALU1/U2/div_35/U61/Y (AND4X1M)                          0.50       2.52 r
+  ALU1/U2/div_35/U6/Y (MX2X1M)                            0.43       2.95 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_6_1/CO (ADDFX2M)
+                                                          0.44       3.39 r
+  ALU1/U2/div_35/U13/Y (AND3X2M)                          0.47       3.86 r
+  ALU1/U2/div_35/U8/Y (MX2X1M)                            0.43       4.29 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_1/CO (ADDFX2M)
+                                                          0.45       4.74 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_2/CO (ADDFX2M)
+                                                          0.28       5.02 r
+  ALU1/U2/div_35/U10/Y (CLKAND2X4M)                       0.37       5.39 r
+  ALU1/U2/div_35/U58/Y (CLKMX2X2M)                        0.39       5.78 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_1/CO (ADDFX2M)
+                                                          0.45       6.23 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_2/CO (ADDFX2M)
+                                                          0.31       6.54 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_3/CO (ADDFX2M)
+                                                          0.31       6.84 f
+  ALU1/U2/div_35/U9/Y (CLKAND2X4M)                        0.43       7.27 f
+  ALU1/U2/div_35/U59/Y (CLKMX2X2M)                        0.45       7.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_1/CO (ADDFX2M)
+                                                          0.45       8.17 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_2/CO (ADDFX2M)
+                                                          0.31       8.48 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_3/CO (ADDFX2M)
+                                                          0.31       8.79 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_4/CO (ADDFX2M)
+                                                          0.31       9.09 f
+  ALU1/U2/div_35/U29/Y (CLKAND2X4M)                       0.49       9.58 f
+  ALU1/U2/div_35/U33/Y (MX2X1M)                           0.62      10.20 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_1/CO (ADDFX2M)
+                                                          0.45      10.65 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_2/CO (ADDFX2M)
+                                                          0.29      10.93 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_3/CO (ADDFX2M)
+                                                          0.29      11.22 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_4/CO (ADDFX2M)
+                                                          0.29      11.51 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_5/CO (ADDFX2M)
+                                                          0.39      11.90 r
+  ALU1/U2/div_35/U63/Y (AND2X1M)                          0.46      12.36 r
+  ALU1/U2/div_35/U60/Y (CLKMX2X2M)                        0.40      12.75 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_1/CO (ADDFX2M)
+                                                          0.45      13.20 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_2/CO (ADDFX2M)
+                                                          0.31      13.51 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_3/CO (ADDFX2M)
+                                                          0.31      13.82 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_4/CO (ADDFX2M)
+                                                          0.31      14.13 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_5/CO (ADDFX2M)
+                                                          0.31      14.44 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_6/CO (ADDFX2M)
+                                                          0.31      14.74 f
+  ALU1/U2/div_35/U12/Y (CLKAND2X6M)                       0.43      15.18 f
+  ALU1/U2/div_35/U35/Y (MX2XLM)                           0.49      15.67 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_1/CO (ADDFX2M)
+                                                          0.43      16.10 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_2/CO (ADDFX2M)
+                                                          0.31      16.41 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_3/CO (ADDFX2M)
+                                                          0.31      16.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_4/CO (ADDFX2M)
+                                                          0.31      17.03 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_5/CO (ADDFX2M)
+                                                          0.31      17.34 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_6/CO (ADDFX2M)
+                                                          0.31      17.65 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_7/CO (ADDFX2M)
+                                                          0.30      17.95 f
+  ALU1/U2/div_35/quotient[0] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00      17.95 f
+  ALU1/U2/U3/Y (AO22X1M)                                  0.35      18.30 f
+  ALU1/U2/U5/Y (OR2X2M)                                   0.27      18.57 f
+  ALU1/U2/Carry_OUT_reg/D (DFFRQX2M)                      0.00      18.57 f
+  data arrival time                                                 18.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  ALU1/U2/Carry_OUT_reg/CK (DFFRQX2M)                     0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                -18.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.30
+
+
+  Startpoint: REG_FILE1/MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU1/U2/Carry_OUT_reg
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_FILE1/MEM_reg[1][6]/CK (DFFRQX2M)                   0.00       0.00 r
+  REG_FILE1/MEM_reg[1][6]/Q (DFFRQX2M)                    0.35       0.35 f
+  REG_FILE1/U17/Y (BUFX10M)                               0.26       0.61 f
+  REG_FILE1/Reg1[6] (Reg_File)                            0.00       0.61 f
+  ALU1/B[6] (ALU)                                         0.00       0.61 f
+  ALU1/U2/B[6] (Arithmatic_Unit_Width16)                  0.00       0.61 f
+  ALU1/U2/div_35/b[6] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00       0.61 f
+  ALU1/U2/div_35/U4/Y (NOR2X5M)                           0.49       1.10 r
+  ALU1/U2/div_35/U62/Y (AND3X1M)                          0.48       1.57 r
+  ALU1/U2/div_35/U14/Y (AND2X2M)                          0.45       2.02 r
+  ALU1/U2/div_35/U61/Y (AND4X1M)                          0.50       2.52 r
+  ALU1/U2/div_35/U6/Y (MX2X1M)                            0.43       2.95 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_6_1/CO (ADDFX2M)
+                                                          0.44       3.39 r
+  ALU1/U2/div_35/U13/Y (AND3X2M)                          0.47       3.86 r
+  ALU1/U2/div_35/U8/Y (MX2X1M)                            0.43       4.29 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_1/CO (ADDFX2M)
+                                                          0.45       4.74 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_2/CO (ADDFX2M)
+                                                          0.28       5.02 r
+  ALU1/U2/div_35/U10/Y (CLKAND2X4M)                       0.37       5.39 r
+  ALU1/U2/div_35/U58/Y (CLKMX2X2M)                        0.39       5.78 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_1/CO (ADDFX2M)
+                                                          0.45       6.23 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_2/CO (ADDFX2M)
+                                                          0.31       6.54 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_3/CO (ADDFX2M)
+                                                          0.31       6.84 f
+  ALU1/U2/div_35/U9/Y (CLKAND2X4M)                        0.43       7.27 f
+  ALU1/U2/div_35/U59/Y (CLKMX2X2M)                        0.45       7.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_1/CO (ADDFX2M)
+                                                          0.45       8.17 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_2/CO (ADDFX2M)
+                                                          0.31       8.48 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_3/CO (ADDFX2M)
+                                                          0.31       8.79 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_4/CO (ADDFX2M)
+                                                          0.31       9.09 f
+  ALU1/U2/div_35/U29/Y (CLKAND2X4M)                       0.49       9.58 f
+  ALU1/U2/div_35/U33/Y (MX2X1M)                           0.62      10.20 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_1/CO (ADDFX2M)
+                                                          0.45      10.65 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_2/CO (ADDFX2M)
+                                                          0.29      10.93 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_3/CO (ADDFX2M)
+                                                          0.29      11.22 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_4/CO (ADDFX2M)
+                                                          0.29      11.51 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_5/CO (ADDFX2M)
+                                                          0.39      11.90 r
+  ALU1/U2/div_35/U63/Y (AND2X1M)                          0.46      12.36 r
+  ALU1/U2/div_35/U60/Y (CLKMX2X2M)                        0.40      12.75 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_1/CO (ADDFX2M)
+                                                          0.45      13.20 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_2/CO (ADDFX2M)
+                                                          0.31      13.51 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_3/CO (ADDFX2M)
+                                                          0.31      13.82 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_4/CO (ADDFX2M)
+                                                          0.31      14.13 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_5/CO (ADDFX2M)
+                                                          0.31      14.44 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_6/CO (ADDFX2M)
+                                                          0.31      14.74 f
+  ALU1/U2/div_35/U12/Y (CLKAND2X6M)                       0.43      15.18 f
+  ALU1/U2/div_35/U35/Y (MX2XLM)                           0.49      15.67 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_1/CO (ADDFX2M)
+                                                          0.43      16.10 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_2/CO (ADDFX2M)
+                                                          0.31      16.41 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_3/CO (ADDFX2M)
+                                                          0.31      16.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_4/CO (ADDFX2M)
+                                                          0.31      17.03 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_5/CO (ADDFX2M)
+                                                          0.31      17.34 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_6/CO (ADDFX2M)
+                                                          0.31      17.65 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_7/CO (ADDFX2M)
+                                                          0.30      17.95 f
+  ALU1/U2/div_35/quotient[0] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00      17.95 f
+  ALU1/U2/U3/Y (AO22X1M)                                  0.35      18.30 f
+  ALU1/U2/U5/Y (OR2X2M)                                   0.27      18.57 f
+  ALU1/U2/Carry_OUT_reg/D (DFFRQX2M)                      0.00      18.57 f
+  data arrival time                                                 18.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  ALU1/U2/Carry_OUT_reg/CK (DFFRQX2M)                     0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                -18.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.30
+
+
+  Startpoint: REG_FILE1/MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU1/U2/Arith_OUT_reg[0]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_FILE1/MEM_reg[1][6]/CK (DFFRQX2M)                   0.00       0.00 r
+  REG_FILE1/MEM_reg[1][6]/Q (DFFRQX2M)                    0.35       0.35 f
+  REG_FILE1/U17/Y (BUFX10M)                               0.26       0.61 f
+  REG_FILE1/Reg1[6] (Reg_File)                            0.00       0.61 f
+  ALU1/B[6] (ALU)                                         0.00       0.61 f
+  ALU1/U2/B[6] (Arithmatic_Unit_Width16)                  0.00       0.61 f
+  ALU1/U2/div_35/b[6] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00       0.61 f
+  ALU1/U2/div_35/U4/Y (NOR2X5M)                           0.49       1.10 r
+  ALU1/U2/div_35/U62/Y (AND3X1M)                          0.48       1.57 r
+  ALU1/U2/div_35/U14/Y (AND2X2M)                          0.45       2.02 r
+  ALU1/U2/div_35/U61/Y (AND4X1M)                          0.50       2.52 r
+  ALU1/U2/div_35/U6/Y (MX2X1M)                            0.43       2.95 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_6_1/CO (ADDFX2M)
+                                                          0.44       3.39 r
+  ALU1/U2/div_35/U13/Y (AND3X2M)                          0.47       3.86 r
+  ALU1/U2/div_35/U8/Y (MX2X1M)                            0.43       4.29 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_1/CO (ADDFX2M)
+                                                          0.45       4.74 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_2/CO (ADDFX2M)
+                                                          0.28       5.02 r
+  ALU1/U2/div_35/U10/Y (CLKAND2X4M)                       0.37       5.39 r
+  ALU1/U2/div_35/U58/Y (CLKMX2X2M)                        0.39       5.78 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_1/CO (ADDFX2M)
+                                                          0.45       6.23 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_2/CO (ADDFX2M)
+                                                          0.31       6.54 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_3/CO (ADDFX2M)
+                                                          0.31       6.84 f
+  ALU1/U2/div_35/U9/Y (CLKAND2X4M)                        0.43       7.27 f
+  ALU1/U2/div_35/U59/Y (CLKMX2X2M)                        0.45       7.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_1/CO (ADDFX2M)
+                                                          0.45       8.17 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_2/CO (ADDFX2M)
+                                                          0.31       8.48 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_3/CO (ADDFX2M)
+                                                          0.31       8.79 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_4/CO (ADDFX2M)
+                                                          0.31       9.09 f
+  ALU1/U2/div_35/U29/Y (CLKAND2X4M)                       0.49       9.58 f
+  ALU1/U2/div_35/U33/Y (MX2X1M)                           0.62      10.20 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_1/CO (ADDFX2M)
+                                                          0.45      10.65 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_2/CO (ADDFX2M)
+                                                          0.29      10.93 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_3/CO (ADDFX2M)
+                                                          0.29      11.22 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_4/CO (ADDFX2M)
+                                                          0.29      11.51 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_5/CO (ADDFX2M)
+                                                          0.39      11.90 r
+  ALU1/U2/div_35/U63/Y (AND2X1M)                          0.46      12.36 r
+  ALU1/U2/div_35/U60/Y (CLKMX2X2M)                        0.40      12.75 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_1/CO (ADDFX2M)
+                                                          0.45      13.20 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_2/CO (ADDFX2M)
+                                                          0.31      13.51 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_3/CO (ADDFX2M)
+                                                          0.31      13.82 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_4/CO (ADDFX2M)
+                                                          0.31      14.13 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_5/CO (ADDFX2M)
+                                                          0.31      14.44 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_6/CO (ADDFX2M)
+                                                          0.31      14.74 f
+  ALU1/U2/div_35/U12/Y (CLKAND2X6M)                       0.43      15.18 f
+  ALU1/U2/div_35/U35/Y (MX2XLM)                           0.49      15.67 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_1/CO (ADDFX2M)
+                                                          0.43      16.10 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_2/CO (ADDFX2M)
+                                                          0.31      16.41 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_3/CO (ADDFX2M)
+                                                          0.31      16.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_4/CO (ADDFX2M)
+                                                          0.31      17.03 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_5/CO (ADDFX2M)
+                                                          0.31      17.34 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_6/CO (ADDFX2M)
+                                                          0.31      17.65 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_7/CO (ADDFX2M)
+                                                          0.30      17.95 f
+  ALU1/U2/div_35/quotient[0] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00      17.95 f
+  ALU1/U2/U3/Y (AO22X1M)                                  0.35      18.30 f
+  ALU1/U2/U5/Y (OR2X2M)                                   0.27      18.57 f
+  ALU1/U2/Arith_OUT_reg[0]/D (DFFRQX2M)                   0.00      18.57 f
+  data arrival time                                                 18.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  ALU1/U2/Arith_OUT_reg[0]/CK (DFFRQX2M)                  0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                -18.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.30
+
+
+  Startpoint: REG_FILE1/MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU1/U2/Carry_OUT_reg
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_FILE1/MEM_reg[1][6]/CK (DFFRQX2M)                   0.00       0.00 r
+  REG_FILE1/MEM_reg[1][6]/Q (DFFRQX2M)                    0.35       0.35 f
+  REG_FILE1/U17/Y (BUFX10M)                               0.26       0.61 f
+  REG_FILE1/Reg1[6] (Reg_File)                            0.00       0.61 f
+  ALU1/B[6] (ALU)                                         0.00       0.61 f
+  ALU1/U2/B[6] (Arithmatic_Unit_Width16)                  0.00       0.61 f
+  ALU1/U2/div_35/b[6] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00       0.61 f
+  ALU1/U2/div_35/U4/Y (NOR2X5M)                           0.49       1.10 r
+  ALU1/U2/div_35/U62/Y (AND3X1M)                          0.48       1.57 r
+  ALU1/U2/div_35/U14/Y (AND2X2M)                          0.45       2.02 r
+  ALU1/U2/div_35/U61/Y (AND4X1M)                          0.50       2.52 r
+  ALU1/U2/div_35/U6/Y (MX2X1M)                            0.43       2.95 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_6_1/CO (ADDFX2M)
+                                                          0.44       3.39 r
+  ALU1/U2/div_35/U13/Y (AND3X2M)                          0.47       3.86 r
+  ALU1/U2/div_35/U8/Y (MX2X1M)                            0.43       4.29 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_1/CO (ADDFX2M)
+                                                          0.45       4.74 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_5_2/CO (ADDFX2M)
+                                                          0.28       5.02 r
+  ALU1/U2/div_35/U10/Y (CLKAND2X4M)                       0.37       5.39 r
+  ALU1/U2/div_35/U58/Y (CLKMX2X2M)                        0.39       5.78 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_1/CO (ADDFX2M)
+                                                          0.45       6.23 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_2/CO (ADDFX2M)
+                                                          0.31       6.54 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_4_3/CO (ADDFX2M)
+                                                          0.31       6.84 f
+  ALU1/U2/div_35/U9/Y (CLKAND2X4M)                        0.43       7.27 f
+  ALU1/U2/div_35/U59/Y (CLKMX2X2M)                        0.45       7.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_1/CO (ADDFX2M)
+                                                          0.45       8.17 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_2/CO (ADDFX2M)
+                                                          0.31       8.48 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_3/CO (ADDFX2M)
+                                                          0.31       8.79 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_3_4/CO (ADDFX2M)
+                                                          0.31       9.09 f
+  ALU1/U2/div_35/U29/Y (CLKAND2X4M)                       0.49       9.58 f
+  ALU1/U2/div_35/U33/Y (MX2X1M)                           0.62      10.20 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_1/CO (ADDFX2M)
+                                                          0.45      10.65 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_2/CO (ADDFX2M)
+                                                          0.29      10.93 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_3/CO (ADDFX2M)
+                                                          0.29      11.22 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_4/CO (ADDFX2M)
+                                                          0.29      11.51 r
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_2_5/CO (ADDFX2M)
+                                                          0.39      11.90 r
+  ALU1/U2/div_35/U63/Y (AND2X1M)                          0.46      12.36 r
+  ALU1/U2/div_35/U60/Y (CLKMX2X2M)                        0.40      12.75 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_1/CO (ADDFX2M)
+                                                          0.45      13.20 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_2/CO (ADDFX2M)
+                                                          0.31      13.51 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_3/CO (ADDFX2M)
+                                                          0.31      13.82 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_4/CO (ADDFX2M)
+                                                          0.31      14.13 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_5/CO (ADDFX2M)
+                                                          0.31      14.44 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_1_6/CO (ADDFX2M)
+                                                          0.31      14.74 f
+  ALU1/U2/div_35/U12/Y (CLKAND2X6M)                       0.43      15.18 f
+  ALU1/U2/div_35/U35/Y (MX2XLM)                           0.49      15.67 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_1/CO (ADDFX2M)
+                                                          0.43      16.10 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_2/CO (ADDFX2M)
+                                                          0.31      16.41 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_3/CO (ADDFX2M)
+                                                          0.31      16.72 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_4/CO (ADDFX2M)
+                                                          0.31      17.03 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_5/CO (ADDFX2M)
+                                                          0.31      17.34 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_6/CO (ADDFX2M)
+                                                          0.31      17.65 f
+  ALU1/U2/div_35/u_div/u_fa_PartRem_0_0_7/CO (ADDFX2M)
+                                                          0.30      17.95 f
+  ALU1/U2/div_35/quotient[0] (Arithmatic_Unit_Width16_DW_div_uns_0)
+                                                          0.00      17.95 f
+  ALU1/U2/U3/Y (AO22X1M)                                  0.35      18.30 f
+  ALU1/U2/U5/Y (OR2X2M)                                   0.27      18.57 f
+  ALU1/U2/Carry_OUT_reg/D (DFFRQX2M)                      0.00      18.57 f
+  data arrival time                                                 18.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  ALU1/U2/Carry_OUT_reg/CK (DFFRQX2M)                     0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
+  --------------------------------------------------------------------------
+  data required time                                                19.87
+  data arrival time                                                -18.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.30
+
+
+  Startpoint: SYS_CTRL1/RX_Control/Current_State_reg[1]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: CLK_Gate1/enable_latch_reg
+            (negative level-sensitive latch clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL1/RX_Control/Current_State_reg[1]/CK (DFFRQX4M)
+                                                          0.00       0.00 r
+  SYS_CTRL1/RX_Control/Current_State_reg[1]/Q (DFFRQX4M)
+                                                          0.51       0.51 r
+  SYS_CTRL1/RX_Control/U5/Y (INVX2M)                      0.34       0.85 f
+  SYS_CTRL1/RX_Control/U6/Y (NOR2X8M)                     0.47       1.32 r
+  SYS_CTRL1/RX_Control/U46/Y (NOR2BX8M)                   0.36       1.68 r
+  SYS_CTRL1/RX_Control/U10/Y (NAND2X2M)                   0.40       2.08 f
+  SYS_CTRL1/RX_Control/U51/Y (NAND2X2M)                   0.51       2.59 r
+  SYS_CTRL1/RX_Control/U53/Y (NOR2BX2M)                   0.17       2.76 f
+  SYS_CTRL1/RX_Control/U52/Y (AND4X2M)                    0.33       3.09 f
+  SYS_CTRL1/RX_Control/U50/Y (NAND4X2M)                   0.34       3.43 r
+  SYS_CTRL1/RX_Control/CLK_EN (Controller_FSM_RX)         0.00       3.43 r
+  SYS_CTRL1/CLK_EN (SYS_CTRL)                             0.00       3.43 r
+  CLK_Gate1/Enable (CLK_Gate)                             0.00       3.43 r
+  CLK_Gate1/enable_latch_reg/D (TLATNX2M)                 0.00       3.43 r
+  data arrival time                                                  3.43
+
+  clock REF_CLK (fall edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  CLK_Gate1/enable_latch_reg/GN (TLATNX2M)                0.00       9.80 f
+  time borrowed from endpoint                             0.00       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -3.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.37
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  REF_CLK nominal pulse width                            10.00   
+  library setup time                                     -0.07   
+  --------------------------------------------------------------
+  max time borrow                                         9.93   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: SYS_CTRL1/RX_Control/Current_State_reg[1]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: CLK_Gate1/enable_latch_reg
+            (negative level-sensitive latch clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL1/RX_Control/Current_State_reg[1]/CK (DFFRQX4M)
+                                                          0.00       0.00 r
+  SYS_CTRL1/RX_Control/Current_State_reg[1]/Q (DFFRQX4M)
+                                                          0.46       0.46 f
+  SYS_CTRL1/RX_Control/U5/Y (INVX2M)                      0.48       0.94 r
+  SYS_CTRL1/RX_Control/U6/Y (NOR2X8M)                     0.22       1.16 f
+  SYS_CTRL1/RX_Control/U46/Y (NOR2BX8M)                   0.20       1.36 f
+  SYS_CTRL1/RX_Control/U10/Y (NAND2X2M)                   0.43       1.78 r
+  SYS_CTRL1/RX_Control/U51/Y (NAND2X2M)                   0.43       2.21 f
+  SYS_CTRL1/RX_Control/U53/Y (NOR2BX2M)                   0.37       2.58 r
+  SYS_CTRL1/RX_Control/U52/Y (AND4X2M)                    0.37       2.95 r
+  SYS_CTRL1/RX_Control/U50/Y (NAND4X2M)                   0.44       3.39 f
+  SYS_CTRL1/RX_Control/CLK_EN (Controller_FSM_RX)         0.00       3.39 f
+  SYS_CTRL1/CLK_EN (SYS_CTRL)                             0.00       3.39 f
+  CLK_Gate1/Enable (CLK_Gate)                             0.00       3.39 f
+  CLK_Gate1/enable_latch_reg/D (TLATNX2M)                 0.00       3.39 f
+  data arrival time                                                  3.39
+
+  clock REF_CLK (fall edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  CLK_Gate1/enable_latch_reg/GN (TLATNX2M)                0.00       9.80 f
+  time borrowed from endpoint                             0.00       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -3.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.41
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  REF_CLK nominal pulse width                            10.00   
+  library setup time                                     -0.19   
+  --------------------------------------------------------------
+  max time borrow                                         9.81   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: SYS_CTRL1/RX_Control/Current_State_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: CLK_Gate1/enable_latch_reg
+            (negative level-sensitive latch clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL1/RX_Control/Current_State_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  SYS_CTRL1/RX_Control/Current_State_reg[2]/Q (DFFRQX2M)
+                                                          0.49       0.49 f
+  SYS_CTRL1/RX_Control/U3/Y (NOR2X4M)                     0.52       1.01 r
+  SYS_CTRL1/RX_Control/U25/Y (NOR2BX4M)                   0.49       1.49 r
+  SYS_CTRL1/RX_Control/U92/Y (NAND3X2M)                   0.36       1.85 f
+  SYS_CTRL1/RX_Control/U51/Y (NAND2X2M)                   0.51       2.36 r
+  SYS_CTRL1/RX_Control/U53/Y (NOR2BX2M)                   0.17       2.53 f
+  SYS_CTRL1/RX_Control/U52/Y (AND4X2M)                    0.33       2.86 f
+  SYS_CTRL1/RX_Control/U50/Y (NAND4X2M)                   0.34       3.20 r
+  SYS_CTRL1/RX_Control/CLK_EN (Controller_FSM_RX)         0.00       3.20 r
+  SYS_CTRL1/CLK_EN (SYS_CTRL)                             0.00       3.20 r
+  CLK_Gate1/Enable (CLK_Gate)                             0.00       3.20 r
+  CLK_Gate1/enable_latch_reg/D (TLATNX2M)                 0.00       3.20 r
+  data arrival time                                                  3.20
+
+  clock REF_CLK (fall edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  CLK_Gate1/enable_latch_reg/GN (TLATNX2M)                0.00       9.80 f
+  time borrowed from endpoint                             0.00       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -3.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.60
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  REF_CLK nominal pulse width                            10.00   
+  library setup time                                     -0.07   
+  --------------------------------------------------------------
+  max time borrow                                         9.93   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: SYS_CTRL1/RX_Control/Current_State_reg[3]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: CLK_Gate1/enable_latch_reg
+            (negative level-sensitive latch clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL1/RX_Control/Current_State_reg[3]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  SYS_CTRL1/RX_Control/Current_State_reg[3]/Q (DFFRQX2M)
+                                                          0.42       0.42 f
+  SYS_CTRL1/RX_Control/U3/Y (NOR2X4M)                     0.50       0.91 r
+  SYS_CTRL1/RX_Control/U25/Y (NOR2BX4M)                   0.49       1.40 r
+  SYS_CTRL1/RX_Control/U92/Y (NAND3X2M)                   0.36       1.76 f
+  SYS_CTRL1/RX_Control/U51/Y (NAND2X2M)                   0.51       2.27 r
+  SYS_CTRL1/RX_Control/U53/Y (NOR2BX2M)                   0.17       2.44 f
+  SYS_CTRL1/RX_Control/U52/Y (AND4X2M)                    0.33       2.77 f
+  SYS_CTRL1/RX_Control/U50/Y (NAND4X2M)                   0.34       3.11 r
+  SYS_CTRL1/RX_Control/CLK_EN (Controller_FSM_RX)         0.00       3.11 r
+  SYS_CTRL1/CLK_EN (SYS_CTRL)                             0.00       3.11 r
+  CLK_Gate1/Enable (CLK_Gate)                             0.00       3.11 r
+  CLK_Gate1/enable_latch_reg/D (TLATNX2M)                 0.00       3.11 r
+  data arrival time                                                  3.11
+
+  clock REF_CLK (fall edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  CLK_Gate1/enable_latch_reg/GN (TLATNX2M)                0.00       9.80 f
+  time borrowed from endpoint                             0.00       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -3.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.69
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  REF_CLK nominal pulse width                            10.00   
+  library setup time                                     -0.07   
+  --------------------------------------------------------------
+  max time borrow                                         9.93   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: SYS_CTRL1/RX_Control/Current_State_reg[3]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: CLK_Gate1/enable_latch_reg
+            (negative level-sensitive latch clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL1/RX_Control/Current_State_reg[3]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  SYS_CTRL1/RX_Control/Current_State_reg[3]/Q (DFFRQX2M)
+                                                          0.42       0.42 f
+  SYS_CTRL1/RX_Control/U90/Y (INVX4M)                     0.41       0.83 r
+  SYS_CTRL1/RX_Control/U47/Y (NOR2X6M)                    0.20       1.04 f
+  SYS_CTRL1/RX_Control/U10/Y (NAND2X2M)                   0.45       1.49 r
+  SYS_CTRL1/RX_Control/U51/Y (NAND2X2M)                   0.43       1.92 f
+  SYS_CTRL1/RX_Control/U53/Y (NOR2BX2M)                   0.37       2.29 r
+  SYS_CTRL1/RX_Control/U52/Y (AND4X2M)                    0.37       2.66 r
+  SYS_CTRL1/RX_Control/U50/Y (NAND4X2M)                   0.44       3.09 f
+  SYS_CTRL1/RX_Control/CLK_EN (Controller_FSM_RX)         0.00       3.09 f
+  SYS_CTRL1/CLK_EN (SYS_CTRL)                             0.00       3.09 f
+  CLK_Gate1/Enable (CLK_Gate)                             0.00       3.09 f
+  CLK_Gate1/enable_latch_reg/D (TLATNX2M)                 0.00       3.09 f
+  data arrival time                                                  3.09
+
+  clock REF_CLK (fall edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  CLK_Gate1/enable_latch_reg/GN (TLATNX2M)                0.00       9.80 f
+  time borrowed from endpoint                             0.00       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -3.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.71
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  REF_CLK nominal pulse width                            10.00   
+  library setup time                                     -0.19   
+  --------------------------------------------------------------
+  max time borrow                                         9.81   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: SYS_CTRL1/RX_Control/Current_State_reg[0]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: CLK_Gate1/enable_latch_reg
+            (negative level-sensitive latch clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL1/RX_Control/Current_State_reg[0]/CK (DFFRHQX8M)
+                                                          0.00       0.00 r
+  SYS_CTRL1/RX_Control/Current_State_reg[0]/Q (DFFRHQX8M)
+                                                          0.34       0.34 f
+  SYS_CTRL1/RX_Control/U26/Y (INVX2M)                     0.45       0.79 r
+  SYS_CTRL1/RX_Control/U47/Y (NOR2X6M)                    0.21       1.00 f
+  SYS_CTRL1/RX_Control/U10/Y (NAND2X2M)                   0.45       1.46 r
+  SYS_CTRL1/RX_Control/U51/Y (NAND2X2M)                   0.43       1.89 f
+  SYS_CTRL1/RX_Control/U53/Y (NOR2BX2M)                   0.37       2.26 r
+  SYS_CTRL1/RX_Control/U52/Y (AND4X2M)                    0.37       2.63 r
+  SYS_CTRL1/RX_Control/U50/Y (NAND4X2M)                   0.44       3.06 f
+  SYS_CTRL1/RX_Control/CLK_EN (Controller_FSM_RX)         0.00       3.06 f
+  SYS_CTRL1/CLK_EN (SYS_CTRL)                             0.00       3.06 f
+  CLK_Gate1/Enable (CLK_Gate)                             0.00       3.06 f
+  CLK_Gate1/enable_latch_reg/D (TLATNX2M)                 0.00       3.06 f
+  data arrival time                                                  3.06
+
+  clock REF_CLK (fall edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  CLK_Gate1/enable_latch_reg/GN (TLATNX2M)                0.00       9.80 f
+  time borrowed from endpoint                             0.00       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -3.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.74
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  REF_CLK nominal pulse width                            10.00   
+  library setup time                                     -0.19   
+  --------------------------------------------------------------
+  max time borrow                                         9.81   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: SYS_CTRL1/RX_Control/Current_State_reg[0]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: CLK_Gate1/enable_latch_reg
+            (negative level-sensitive latch clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL1/RX_Control/Current_State_reg[0]/CK (DFFRHQX8M)
+                                                          0.00       0.00 r
+  SYS_CTRL1/RX_Control/Current_State_reg[0]/Q (DFFRHQX8M)
+                                                          0.49       0.49 r
+  SYS_CTRL1/RX_Control/U26/Y (INVX2M)                     0.32       0.81 f
+  SYS_CTRL1/RX_Control/U47/Y (NOR2X6M)                    0.46       1.28 r
+  SYS_CTRL1/RX_Control/U10/Y (NAND2X2M)                   0.40       1.68 f
+  SYS_CTRL1/RX_Control/U51/Y (NAND2X2M)                   0.51       2.19 r
+  SYS_CTRL1/RX_Control/U53/Y (NOR2BX2M)                   0.17       2.36 f
+  SYS_CTRL1/RX_Control/U52/Y (AND4X2M)                    0.33       2.69 f
+  SYS_CTRL1/RX_Control/U50/Y (NAND4X2M)                   0.34       3.03 r
+  SYS_CTRL1/RX_Control/CLK_EN (Controller_FSM_RX)         0.00       3.03 r
+  SYS_CTRL1/CLK_EN (SYS_CTRL)                             0.00       3.03 r
+  CLK_Gate1/Enable (CLK_Gate)                             0.00       3.03 r
+  CLK_Gate1/enable_latch_reg/D (TLATNX2M)                 0.00       3.03 r
+  data arrival time                                                  3.03
+
+  clock REF_CLK (fall edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  CLK_Gate1/enable_latch_reg/GN (TLATNX2M)                0.00       9.80 f
+  time borrowed from endpoint                             0.00       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -3.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.77
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  REF_CLK nominal pulse width                            10.00   
+  library setup time                                     -0.07   
+  --------------------------------------------------------------
+  max time borrow                                         9.93   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: SYS_CTRL1/RX_Control/Current_State_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: CLK_Gate1/enable_latch_reg
+            (negative level-sensitive latch clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL1/RX_Control/Current_State_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  SYS_CTRL1/RX_Control/Current_State_reg[2]/Q (DFFRQX2M)
+                                                          0.49       0.49 f
+  SYS_CTRL1/RX_Control/U89/Y (INVX4M)                     0.35       0.84 r
+  SYS_CTRL1/RX_Control/U46/Y (NOR2BX8M)                   0.15       0.99 f
+  SYS_CTRL1/RX_Control/U10/Y (NAND2X2M)                   0.43       1.42 r
+  SYS_CTRL1/RX_Control/U51/Y (NAND2X2M)                   0.43       1.85 f
+  SYS_CTRL1/RX_Control/U53/Y (NOR2BX2M)                   0.37       2.22 r
+  SYS_CTRL1/RX_Control/U52/Y (AND4X2M)                    0.37       2.59 r
+  SYS_CTRL1/RX_Control/U50/Y (NAND4X2M)                   0.44       3.02 f
+  SYS_CTRL1/RX_Control/CLK_EN (Controller_FSM_RX)         0.00       3.02 f
+  SYS_CTRL1/CLK_EN (SYS_CTRL)                             0.00       3.02 f
+  CLK_Gate1/Enable (CLK_Gate)                             0.00       3.02 f
+  CLK_Gate1/enable_latch_reg/D (TLATNX2M)                 0.00       3.02 f
+  data arrival time                                                  3.02
+
+  clock REF_CLK (fall edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  CLK_Gate1/enable_latch_reg/GN (TLATNX2M)                0.00       9.80 f
+  time borrowed from endpoint                             0.00       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -3.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.78
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  REF_CLK nominal pulse width                            10.00   
+  library setup time                                     -0.19   
+  --------------------------------------------------------------
+  max time borrow                                         9.81   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: SYS_CTRL1/RX_Control/Current_State_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: CLK_Gate1/enable_latch_reg
+            (negative level-sensitive latch clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL1/RX_Control/Current_State_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  SYS_CTRL1/RX_Control/Current_State_reg[2]/Q (DFFRQX2M)
+                                                          0.63       0.63 r
+  SYS_CTRL1/RX_Control/U89/Y (INVX4M)                     0.27       0.90 f
+  SYS_CTRL1/RX_Control/U46/Y (NOR2BX8M)                   0.37       1.27 r
+  SYS_CTRL1/RX_Control/U10/Y (NAND2X2M)                   0.40       1.67 f
+  SYS_CTRL1/RX_Control/U51/Y (NAND2X2M)                   0.51       2.18 r
+  SYS_CTRL1/RX_Control/U53/Y (NOR2BX2M)                   0.17       2.35 f
+  SYS_CTRL1/RX_Control/U52/Y (AND4X2M)                    0.33       2.68 f
+  SYS_CTRL1/RX_Control/U50/Y (NAND4X2M)                   0.34       3.01 r
+  SYS_CTRL1/RX_Control/CLK_EN (Controller_FSM_RX)         0.00       3.01 r
+  SYS_CTRL1/CLK_EN (SYS_CTRL)                             0.00       3.01 r
+  CLK_Gate1/Enable (CLK_Gate)                             0.00       3.01 r
+  CLK_Gate1/enable_latch_reg/D (TLATNX2M)                 0.00       3.01 r
+  data arrival time                                                  3.01
+
+  clock REF_CLK (fall edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  CLK_Gate1/enable_latch_reg/GN (TLATNX2M)                0.00       9.80 f
+  time borrowed from endpoint                             0.00       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -3.01
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.79
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  REF_CLK nominal pulse width                            10.00   
+  library setup time                                     -0.07   
+  --------------------------------------------------------------
+  max time borrow                                         9.93   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: SYS_CTRL1/RX_Control/Current_State_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: CLK_Gate1/enable_latch_reg
+            (negative level-sensitive latch clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL1/RX_Control/Current_State_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  SYS_CTRL1/RX_Control/Current_State_reg[2]/Q (DFFRQX2M)
+                                                          0.63       0.63 r
+  SYS_CTRL1/RX_Control/U3/Y (NOR2X4M)                     0.26       0.89 f
+  SYS_CTRL1/RX_Control/U25/Y (NOR2BX4M)                   0.23       1.12 f
+  SYS_CTRL1/RX_Control/U92/Y (NAND3X2M)                   0.34       1.47 r
+  SYS_CTRL1/RX_Control/U51/Y (NAND2X2M)                   0.37       1.83 f
+  SYS_CTRL1/RX_Control/U53/Y (NOR2BX2M)                   0.37       2.20 r
+  SYS_CTRL1/RX_Control/U52/Y (AND4X2M)                    0.37       2.57 r
+  SYS_CTRL1/RX_Control/U50/Y (NAND4X2M)                   0.44       3.01 f
+  SYS_CTRL1/RX_Control/CLK_EN (Controller_FSM_RX)         0.00       3.01 f
+  SYS_CTRL1/CLK_EN (SYS_CTRL)                             0.00       3.01 f
+  CLK_Gate1/Enable (CLK_Gate)                             0.00       3.01 f
+  CLK_Gate1/enable_latch_reg/D (TLATNX2M)                 0.00       3.01 f
+  data arrival time                                                  3.01
+
+  clock REF_CLK (fall edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  CLK_Gate1/enable_latch_reg/GN (TLATNX2M)                0.00       9.80 f
+  time borrowed from endpoint                             0.00       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -3.01
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.79
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  REF_CLK nominal pulse width                            10.00   
+  library setup time                                     -0.19   
+  --------------------------------------------------------------
+  max time borrow                                         9.81   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+  Startpoint: U1/UARTRX/FSM1/Curr_state_reg[1]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: Framing_error
+            (output port clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U1/UARTRX/FSM1/Curr_state_reg[1]/CK (DFFRQX2M)          0.00       0.00 r
+  U1/UARTRX/FSM1/Curr_state_reg[1]/Q (DFFRQX2M)           0.60       0.60 r
+  U1/UARTRX/FSM1/U19/Y (INVX4M)                           0.30       0.90 f
+  U1/UARTRX/FSM1/U17/Y (NOR3X8M)                          0.48       1.38 r
+  U1/UARTRX/FSM1/stp_chk_en (FSM_RX)                      0.00       1.38 r
+  U1/UARTRX/Check3/stp_chk_en (Stop_Check)                0.00       1.38 r
+  U1/UARTRX/Check3/U2/Y (AND4X12M)                        0.50       1.88 r
+  U1/UARTRX/Check3/stp_err (Stop_Check)                   0.00       1.88 r
+  U1/UARTRX/Framing_error (UART_RX)                       0.00       1.88 r
+  U1/Framing_error (UART)                                 0.00       1.88 r
+  Framing_error (out)                                     0.00       1.88 r
+  data arrival time                                                  1.88
+
+  clock UART_RX_CLK (rise edge)                        1085.00    1085.00
+  clock network delay (ideal)                             0.00    1085.00
+  clock uncertainty                                      -0.20    1084.80
+  output external delay                                -217.00     867.80
+  data required time                                               867.80
+  --------------------------------------------------------------------------
+  data required time                                               867.80
+  data arrival time                                                 -1.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                      865.92
+
+
+  Startpoint: U1/UARTRX/FSM1/Curr_state_reg[2]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: Framing_error
+            (output port clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U1/UARTRX/FSM1/Curr_state_reg[2]/CK (DFFRQX2M)          0.00       0.00 r
+  U1/UARTRX/FSM1/Curr_state_reg[2]/Q (DFFRQX2M)           0.52       0.52 r
+  U1/UARTRX/FSM1/U18/Y (INVX4M)                           0.30       0.82 f
+  U1/UARTRX/FSM1/U17/Y (NOR3X8M)                          0.49       1.31 r
+  U1/UARTRX/FSM1/stp_chk_en (FSM_RX)                      0.00       1.31 r
+  U1/UARTRX/Check3/stp_chk_en (Stop_Check)                0.00       1.31 r
+  U1/UARTRX/Check3/U2/Y (AND4X12M)                        0.50       1.81 r
+  U1/UARTRX/Check3/stp_err (Stop_Check)                   0.00       1.81 r
+  U1/UARTRX/Framing_error (UART_RX)                       0.00       1.81 r
+  U1/Framing_error (UART)                                 0.00       1.81 r
+  Framing_error (out)                                     0.00       1.81 r
+  data arrival time                                                  1.81
+
+  clock UART_RX_CLK (rise edge)                        1085.00    1085.00
+  clock network delay (ideal)                             0.00    1085.00
+  clock uncertainty                                      -0.20    1084.80
+  output external delay                                -217.00     867.80
+  data required time                                               867.80
+  --------------------------------------------------------------------------
+  data required time                                               867.80
+  data arrival time                                                 -1.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                      865.99
+
+
+  Startpoint: U1/UARTRX/Counter1/edge_cnt_reg[0]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: Framing_error
+            (output port clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U1/UARTRX/Counter1/edge_cnt_reg[0]/CK (DFFRHQX8M)       0.00       0.00 r
+  U1/UARTRX/Counter1/edge_cnt_reg[0]/Q (DFFRHQX8M)        0.59       0.59 r
+  U1/UARTRX/Counter1/edge_cnt[0] (Edge_Bit_Counter)       0.00       0.59 r
+  U1/UARTRX/Check3/edge_cnt[0] (Stop_Check)               0.00       0.59 r
+  U1/UARTRX/Check3/U3/Y (NOR2BX2M)                        0.38       0.97 r
+  U1/UARTRX/Check3/U2/Y (AND4X12M)                        0.50       1.47 r
+  U1/UARTRX/Check3/stp_err (Stop_Check)                   0.00       1.47 r
+  U1/UARTRX/Framing_error (UART_RX)                       0.00       1.47 r
+  U1/Framing_error (UART)                                 0.00       1.47 r
+  Framing_error (out)                                     0.00       1.47 r
+  data arrival time                                                  1.47
+
+  clock UART_RX_CLK (rise edge)                        1085.00    1085.00
+  clock network delay (ideal)                             0.00    1085.00
+  clock uncertainty                                      -0.20    1084.80
+  output external delay                                -217.00     867.80
+  data required time                                               867.80
+  --------------------------------------------------------------------------
+  data required time                                               867.80
+  data arrival time                                                 -1.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                      866.33
+
+
+  Startpoint: RX_IN (input port clocked by UART_RX_CLK)
+  Endpoint: U1/UARTRX/Sample1/buffer_reg[1]
+            (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                  217.00     217.00 r
+  RX_IN (in)                                              0.17     217.17 r
+  U7/Y (CLKBUFX2M)                                        0.32     217.49 r
+  U1/RX_IN (UART)                                         0.00     217.49 r
+  U1/UARTRX/RX_IN (UART_RX)                               0.00     217.49 r
+  U1/UARTRX/Sample1/RX_IN (Data_Sampling)                 0.00     217.49 r
+  U1/UARTRX/Sample1/U25/Y (INVX2M)                        0.28     217.77 f
+  U1/UARTRX/Sample1/U31/Y (OAI2BB2X1M)                    0.47     218.24 r
+  U1/UARTRX/Sample1/buffer_reg[1]/D (DFFRQX2M)            0.00     218.24 r
+  data arrival time                                                218.24
+
+  clock UART_RX_CLK (rise edge)                        1085.00    1085.00
+  clock network delay (ideal)                             0.00    1085.00
+  clock uncertainty                                      -0.20    1084.80
+  U1/UARTRX/Sample1/buffer_reg[1]/CK (DFFRQX2M)           0.00    1084.80 r
+  library setup time                                     -0.22    1084.58
+  data required time                                              1084.58
+  --------------------------------------------------------------------------
+  data required time                                              1084.58
+  data arrival time                                               -218.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                      866.34
+
+
+  Startpoint: RX_IN (input port clocked by UART_RX_CLK)
+  Endpoint: U1/UARTRX/Sample1/buffer_reg[2]
+            (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                  217.00     217.00 r
+  RX_IN (in)                                              0.17     217.17 r
+  U7/Y (CLKBUFX2M)                                        0.32     217.49 r
+  U1/RX_IN (UART)                                         0.00     217.49 r
+  U1/UARTRX/RX_IN (UART_RX)                               0.00     217.49 r
+  U1/UARTRX/Sample1/RX_IN (Data_Sampling)                 0.00     217.49 r
+  U1/UARTRX/Sample1/U25/Y (INVX2M)                        0.28     217.77 f
+  U1/UARTRX/Sample1/U35/Y (OAI2BB2X1M)                    0.47     218.24 r
+  U1/UARTRX/Sample1/buffer_reg[2]/D (DFFRQX2M)            0.00     218.24 r
+  data arrival time                                                218.24
+
+  clock UART_RX_CLK (rise edge)                        1085.00    1085.00
+  clock network delay (ideal)                             0.00    1085.00
+  clock uncertainty                                      -0.20    1084.80
+  U1/UARTRX/Sample1/buffer_reg[2]/CK (DFFRQX2M)           0.00    1084.80 r
+  library setup time                                     -0.22    1084.59
+  data required time                                              1084.59
+  --------------------------------------------------------------------------
+  data required time                                              1084.59
+  data arrival time                                               -218.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                      866.34
+
+
+  Startpoint: RX_IN (input port clocked by UART_RX_CLK)
+  Endpoint: U1/UARTRX/Sample1/buffer_reg[1]
+            (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                  217.00     217.00 r
+  RX_IN (in)                                              0.17     217.17 r
+  U7/Y (CLKBUFX2M)                                        0.32     217.49 r
+  U1/RX_IN (UART)                                         0.00     217.49 r
+  U1/UARTRX/RX_IN (UART_RX)                               0.00     217.49 r
+  U1/UARTRX/Sample1/RX_IN (Data_Sampling)                 0.00     217.49 r
+  U1/UARTRX/Sample1/U25/Y (INVX2M)                        0.28     217.77 f
+  U1/UARTRX/Sample1/U31/Y (OAI2BB2X1M)                    0.47     218.24 r
+  U1/UARTRX/Sample1/buffer_reg[1]/D (DFFRQX2M)            0.00     218.24 r
+  data arrival time                                                218.24
+
+  clock UART_RX_CLK (rise edge)                        1085.00    1085.00
+  clock network delay (ideal)                             0.00    1085.00
+  clock uncertainty                                      -0.20    1084.80
+  U1/UARTRX/Sample1/buffer_reg[1]/CK (DFFRQX2M)           0.00    1084.80 r
+  library setup time                                     -0.22    1084.58
+  data required time                                              1084.58
+  --------------------------------------------------------------------------
+  data required time                                              1084.58
+  data arrival time                                               -218.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                      866.34
+
+
+  Startpoint: RX_IN (input port clocked by UART_RX_CLK)
+  Endpoint: U1/UARTRX/Sample1/buffer_reg[1]
+            (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                  217.00     217.00 r
+  RX_IN (in)                                              0.17     217.17 r
+  U7/Y (CLKBUFX2M)                                        0.32     217.49 r
+  U1/RX_IN (UART)                                         0.00     217.49 r
+  U1/UARTRX/RX_IN (UART_RX)                               0.00     217.49 r
+  U1/UARTRX/Sample1/RX_IN (Data_Sampling)                 0.00     217.49 r
+  U1/UARTRX/Sample1/U25/Y (INVX2M)                        0.28     217.77 f
+  U1/UARTRX/Sample1/U31/Y (OAI2BB2X1M)                    0.47     218.24 r
+  U1/UARTRX/Sample1/buffer_reg[1]/D (DFFRQX2M)            0.00     218.24 r
+  data arrival time                                                218.24
+
+  clock UART_RX_CLK (rise edge)                        1085.00    1085.00
+  clock network delay (ideal)                             0.00    1085.00
+  clock uncertainty                                      -0.20    1084.80
+  U1/UARTRX/Sample1/buffer_reg[1]/CK (DFFRQX2M)           0.00    1084.80 r
+  library setup time                                     -0.22    1084.58
+  data required time                                              1084.58
+  --------------------------------------------------------------------------
+  data required time                                              1084.58
+  data arrival time                                               -218.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                      866.34
+
+
+  Startpoint: RX_IN (input port clocked by UART_RX_CLK)
+  Endpoint: U1/UARTRX/Sample1/buffer_reg[2]
+            (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                  217.00     217.00 r
+  RX_IN (in)                                              0.17     217.17 r
+  U7/Y (CLKBUFX2M)                                        0.32     217.49 r
+  U1/RX_IN (UART)                                         0.00     217.49 r
+  U1/UARTRX/RX_IN (UART_RX)                               0.00     217.49 r
+  U1/UARTRX/Sample1/RX_IN (Data_Sampling)                 0.00     217.49 r
+  U1/UARTRX/Sample1/U25/Y (INVX2M)                        0.28     217.77 f
+  U1/UARTRX/Sample1/U35/Y (OAI2BB2X1M)                    0.47     218.24 r
+  U1/UARTRX/Sample1/buffer_reg[2]/D (DFFRQX2M)            0.00     218.24 r
+  data arrival time                                                218.24
+
+  clock UART_RX_CLK (rise edge)                        1085.00    1085.00
+  clock network delay (ideal)                             0.00    1085.00
+  clock uncertainty                                      -0.20    1084.80
+  U1/UARTRX/Sample1/buffer_reg[2]/CK (DFFRQX2M)           0.00    1084.80 r
+  library setup time                                     -0.22    1084.59
+  data required time                                              1084.59
+  --------------------------------------------------------------------------
+  data required time                                              1084.59
+  data arrival time                                               -218.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                      866.34
+
+
+  Startpoint: RX_IN (input port clocked by UART_RX_CLK)
+  Endpoint: U1/UARTRX/Sample1/buffer_reg[2]
+            (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                  217.00     217.00 r
+  RX_IN (in)                                              0.17     217.17 r
+  U7/Y (CLKBUFX2M)                                        0.32     217.49 r
+  U1/RX_IN (UART)                                         0.00     217.49 r
+  U1/UARTRX/RX_IN (UART_RX)                               0.00     217.49 r
+  U1/UARTRX/Sample1/RX_IN (Data_Sampling)                 0.00     217.49 r
+  U1/UARTRX/Sample1/U25/Y (INVX2M)                        0.28     217.77 f
+  U1/UARTRX/Sample1/U35/Y (OAI2BB2X1M)                    0.47     218.24 r
+  U1/UARTRX/Sample1/buffer_reg[2]/D (DFFRQX2M)            0.00     218.24 r
+  data arrival time                                                218.24
+
+  clock UART_RX_CLK (rise edge)                        1085.00    1085.00
+  clock network delay (ideal)                             0.00    1085.00
+  clock uncertainty                                      -0.20    1084.80
+  U1/UARTRX/Sample1/buffer_reg[2]/CK (DFFRQX2M)           0.00    1084.80 r
+  library setup time                                     -0.22    1084.59
+  data required time                                              1084.59
+  --------------------------------------------------------------------------
+  data required time                                              1084.59
+  data arrival time                                               -218.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                      866.34
+
+
+  Startpoint: RX_IN (input port clocked by UART_RX_CLK)
+  Endpoint: U1/UARTRX/Sample1/buffer_reg[0]
+            (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Path Group: UART_RX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                  217.00     217.00 r
+  RX_IN (in)                                              0.17     217.17 r
+  U7/Y (CLKBUFX2M)                                        0.32     217.49 r
+  U1/RX_IN (UART)                                         0.00     217.49 r
+  U1/UARTRX/RX_IN (UART_RX)                               0.00     217.49 r
+  U1/UARTRX/Sample1/RX_IN (Data_Sampling)                 0.00     217.49 r
+  U1/UARTRX/Sample1/U25/Y (INVX2M)                        0.28     217.77 f
+  U1/UARTRX/Sample1/U33/Y (OAI2BB2X1M)                    0.46     218.23 r
+  U1/UARTRX/Sample1/buffer_reg[0]/D (DFFRQX2M)            0.00     218.23 r
+  data arrival time                                                218.23
+
+  clock UART_RX_CLK (rise edge)                        1085.00    1085.00
+  clock network delay (ideal)                             0.00    1085.00
+  clock uncertainty                                      -0.20    1084.80
+  U1/UARTRX/Sample1/buffer_reg[0]/CK (DFFRQX2M)           0.00    1084.80 r
+  library setup time                                     -0.21    1084.59
+  data required time                                              1084.59
+  --------------------------------------------------------------------------
+  data required time                                              1084.59
+  data arrival time                                               -218.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                      866.35
+
+
+  Startpoint: SYNC_TX1/sync_bus_reg[6]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: U1/UARTTX/U3/par_bit_reg
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                        7595.00    7595.00
+  clock network delay (ideal)                             0.00    7595.00
+  SYNC_TX1/sync_bus_reg[6]/CK (DFFRQX2M)                  0.00    7595.00 r
+  SYNC_TX1/sync_bus_reg[6]/Q (DFFRQX2M)                   0.56    7595.56 r
+  SYNC_TX1/sync_bus[6] (DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0)
+                                                          0.00    7595.56 r
+  U1/P_DATA_TX[6] (UART)                                  0.00    7595.56 r
+  U1/UARTTX/P_DATA[6] (UART_TX)                           0.00    7595.56 r
+  U1/UARTTX/U3/P_DATA[6] (Parity_Calc)                    0.00    7595.56 r
+  U1/UARTTX/U3/U8/Y (CLKXOR2X2M)                          0.36    7595.92 f
+  U1/UARTTX/U3/U7/Y (XOR3XLM)                             0.46    7596.38 r
+  U1/UARTTX/U3/U5/Y (XOR3XLM)                             0.48    7596.86 f
+  U1/UARTTX/U3/U3/Y (OAI2BB2X1M)                          0.48    7597.34 r
+  U1/UARTTX/U3/par_bit_reg/D (DFFRX1M)                    0.00    7597.34 r
+  data arrival time                                               7597.34
+
+  clock UART_TX_CLK (rise edge)                        8680.00    8680.00
+  clock network delay (ideal)                             0.00    8680.00
+  U1/UARTTX/U3/par_bit_reg/CK (DFFRX1M)                   0.00    8680.00 r
+  library setup time                                     -0.18    8679.82
+  data required time                                              8679.82
+  --------------------------------------------------------------------------
+  data required time                                              8679.82
+  data arrival time                                              -7597.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1082.48
+
+
+  Startpoint: SYNC_TX1/sync_bus_reg[6]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: U1/UARTTX/U3/par_bit_reg
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                        7595.00    7595.00
+  clock network delay (ideal)                             0.00    7595.00
+  SYNC_TX1/sync_bus_reg[6]/CK (DFFRQX2M)                  0.00    7595.00 r
+  SYNC_TX1/sync_bus_reg[6]/Q (DFFRQX2M)                   0.56    7595.56 r
+  SYNC_TX1/sync_bus[6] (DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0)
+                                                          0.00    7595.56 r
+  U1/P_DATA_TX[6] (UART)                                  0.00    7595.56 r
+  U1/UARTTX/P_DATA[6] (UART_TX)                           0.00    7595.56 r
+  U1/UARTTX/U3/P_DATA[6] (Parity_Calc)                    0.00    7595.56 r
+  U1/UARTTX/U3/U8/Y (CLKXOR2X2M)                          0.36    7595.92 f
+  U1/UARTTX/U3/U7/Y (XOR3XLM)                             0.46    7596.38 r
+  U1/UARTTX/U3/U5/Y (XOR3XLM)                             0.48    7596.86 f
+  U1/UARTTX/U3/U3/Y (OAI2BB2X1M)                          0.48    7597.34 r
+  U1/UARTTX/U3/par_bit_reg/D (DFFRX1M)                    0.00    7597.34 r
+  data arrival time                                               7597.34
+
+  clock UART_TX_CLK (rise edge)                        8680.00    8680.00
+  clock network delay (ideal)                             0.00    8680.00
+  U1/UARTTX/U3/par_bit_reg/CK (DFFRX1M)                   0.00    8680.00 r
+  library setup time                                     -0.18    8679.82
+  data required time                                              8679.82
+  --------------------------------------------------------------------------
+  data required time                                              8679.82
+  data arrival time                                              -7597.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1082.48
+
+
+  Startpoint: SYNC_TX1/sync_bus_reg[6]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: U1/UARTTX/U3/par_bit_reg
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                        7595.00    7595.00
+  clock network delay (ideal)                             0.00    7595.00
+  SYNC_TX1/sync_bus_reg[6]/CK (DFFRQX2M)                  0.00    7595.00 r
+  SYNC_TX1/sync_bus_reg[6]/Q (DFFRQX2M)                   0.56    7595.56 r
+  SYNC_TX1/sync_bus[6] (DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0)
+                                                          0.00    7595.56 r
+  U1/P_DATA_TX[6] (UART)                                  0.00    7595.56 r
+  U1/UARTTX/P_DATA[6] (UART_TX)                           0.00    7595.56 r
+  U1/UARTTX/U3/P_DATA[6] (Parity_Calc)                    0.00    7595.56 r
+  U1/UARTTX/U3/U8/Y (CLKXOR2X2M)                          0.36    7595.92 f
+  U1/UARTTX/U3/U7/Y (XOR3XLM)                             0.46    7596.38 r
+  U1/UARTTX/U3/U5/Y (XOR3XLM)                             0.48    7596.86 f
+  U1/UARTTX/U3/U3/Y (OAI2BB2X1M)                          0.48    7597.34 r
+  U1/UARTTX/U3/par_bit_reg/D (DFFRX1M)                    0.00    7597.34 r
+  data arrival time                                               7597.34
+
+  clock UART_TX_CLK (rise edge)                        8680.00    8680.00
+  clock network delay (ideal)                             0.00    8680.00
+  U1/UARTTX/U3/par_bit_reg/CK (DFFRX1M)                   0.00    8680.00 r
+  library setup time                                     -0.18    8679.82
+  data required time                                              8679.82
+  --------------------------------------------------------------------------
+  data required time                                              8679.82
+  data arrival time                                              -7597.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1082.48
+
+
+  Startpoint: SYNC_TX1/sync_bus_reg[6]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: U1/UARTTX/U3/par_bit_reg
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                        7595.00    7595.00
+  clock network delay (ideal)                             0.00    7595.00
+  SYNC_TX1/sync_bus_reg[6]/CK (DFFRQX2M)                  0.00    7595.00 r
+  SYNC_TX1/sync_bus_reg[6]/Q (DFFRQX2M)                   0.56    7595.56 r
+  SYNC_TX1/sync_bus[6] (DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0)
+                                                          0.00    7595.56 r
+  U1/P_DATA_TX[6] (UART)                                  0.00    7595.56 r
+  U1/UARTTX/P_DATA[6] (UART_TX)                           0.00    7595.56 r
+  U1/UARTTX/U3/P_DATA[6] (Parity_Calc)                    0.00    7595.56 r
+  U1/UARTTX/U3/U8/Y (CLKXOR2X2M)                          0.36    7595.92 f
+  U1/UARTTX/U3/U7/Y (XOR3XLM)                             0.46    7596.38 r
+  U1/UARTTX/U3/U5/Y (XOR3XLM)                             0.48    7596.86 f
+  U1/UARTTX/U3/U3/Y (OAI2BB2X1M)                          0.48    7597.34 r
+  U1/UARTTX/U3/par_bit_reg/D (DFFRX1M)                    0.00    7597.34 r
+  data arrival time                                               7597.34
+
+  clock UART_TX_CLK (rise edge)                        8680.00    8680.00
+  clock network delay (ideal)                             0.00    8680.00
+  U1/UARTTX/U3/par_bit_reg/CK (DFFRX1M)                   0.00    8680.00 r
+  library setup time                                     -0.18    8679.82
+  data required time                                              8679.82
+  --------------------------------------------------------------------------
+  data required time                                              8679.82
+  data arrival time                                              -7597.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1082.48
+
+
+  Startpoint: SYNC_TX1/sync_bus_reg[6]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: U1/UARTTX/U3/par_bit_reg
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                        7595.00    7595.00
+  clock network delay (ideal)                             0.00    7595.00
+  SYNC_TX1/sync_bus_reg[6]/CK (DFFRQX2M)                  0.00    7595.00 r
+  SYNC_TX1/sync_bus_reg[6]/Q (DFFRQX2M)                   0.56    7595.56 r
+  SYNC_TX1/sync_bus[6] (DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0)
+                                                          0.00    7595.56 r
+  U1/P_DATA_TX[6] (UART)                                  0.00    7595.56 r
+  U1/UARTTX/P_DATA[6] (UART_TX)                           0.00    7595.56 r
+  U1/UARTTX/U3/P_DATA[6] (Parity_Calc)                    0.00    7595.56 r
+  U1/UARTTX/U3/U8/Y (CLKXOR2X2M)                          0.36    7595.92 f
+  U1/UARTTX/U3/U7/Y (XOR3XLM)                             0.46    7596.38 r
+  U1/UARTTX/U3/U5/Y (XOR3XLM)                             0.48    7596.86 f
+  U1/UARTTX/U3/U3/Y (OAI2BB2X1M)                          0.48    7597.34 r
+  U1/UARTTX/U3/par_bit_reg/D (DFFRX1M)                    0.00    7597.34 r
+  data arrival time                                               7597.34
+
+  clock UART_TX_CLK (rise edge)                        8680.00    8680.00
+  clock network delay (ideal)                             0.00    8680.00
+  U1/UARTTX/U3/par_bit_reg/CK (DFFRX1M)                   0.00    8680.00 r
+  library setup time                                     -0.18    8679.82
+  data required time                                              8679.82
+  --------------------------------------------------------------------------
+  data required time                                              8679.82
+  data arrival time                                              -7597.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1082.48
+
+
+  Startpoint: SYNC_TX1/sync_bus_reg[6]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: U1/UARTTX/U3/par_bit_reg
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                        7595.00    7595.00
+  clock network delay (ideal)                             0.00    7595.00
+  SYNC_TX1/sync_bus_reg[6]/CK (DFFRQX2M)                  0.00    7595.00 r
+  SYNC_TX1/sync_bus_reg[6]/Q (DFFRQX2M)                   0.56    7595.56 r
+  SYNC_TX1/sync_bus[6] (DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0)
+                                                          0.00    7595.56 r
+  U1/P_DATA_TX[6] (UART)                                  0.00    7595.56 r
+  U1/UARTTX/P_DATA[6] (UART_TX)                           0.00    7595.56 r
+  U1/UARTTX/U3/P_DATA[6] (Parity_Calc)                    0.00    7595.56 r
+  U1/UARTTX/U3/U8/Y (CLKXOR2X2M)                          0.36    7595.92 f
+  U1/UARTTX/U3/U7/Y (XOR3XLM)                             0.46    7596.38 r
+  U1/UARTTX/U3/U5/Y (XOR3XLM)                             0.48    7596.86 f
+  U1/UARTTX/U3/U3/Y (OAI2BB2X1M)                          0.48    7597.34 r
+  U1/UARTTX/U3/par_bit_reg/D (DFFRX1M)                    0.00    7597.34 r
+  data arrival time                                               7597.34
+
+  clock UART_TX_CLK (rise edge)                        8680.00    8680.00
+  clock network delay (ideal)                             0.00    8680.00
+  U1/UARTTX/U3/par_bit_reg/CK (DFFRX1M)                   0.00    8680.00 r
+  library setup time                                     -0.18    8679.82
+  data required time                                              8679.82
+  --------------------------------------------------------------------------
+  data required time                                              8679.82
+  data arrival time                                              -7597.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1082.48
+
+
+  Startpoint: SYNC_TX1/sync_bus_reg[6]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: U1/UARTTX/U3/par_bit_reg
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                        7595.00    7595.00
+  clock network delay (ideal)                             0.00    7595.00
+  SYNC_TX1/sync_bus_reg[6]/CK (DFFRQX2M)                  0.00    7595.00 r
+  SYNC_TX1/sync_bus_reg[6]/Q (DFFRQX2M)                   0.56    7595.56 r
+  SYNC_TX1/sync_bus[6] (DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0)
+                                                          0.00    7595.56 r
+  U1/P_DATA_TX[6] (UART)                                  0.00    7595.56 r
+  U1/UARTTX/P_DATA[6] (UART_TX)                           0.00    7595.56 r
+  U1/UARTTX/U3/P_DATA[6] (Parity_Calc)                    0.00    7595.56 r
+  U1/UARTTX/U3/U8/Y (CLKXOR2X2M)                          0.36    7595.92 f
+  U1/UARTTX/U3/U7/Y (XOR3XLM)                             0.46    7596.38 r
+  U1/UARTTX/U3/U5/Y (XOR3XLM)                             0.48    7596.85 f
+  U1/UARTTX/U3/U3/Y (OAI2BB2X1M)                          0.48    7597.34 r
+  U1/UARTTX/U3/par_bit_reg/D (DFFRX1M)                    0.00    7597.34 r
+  data arrival time                                               7597.34
+
+  clock UART_TX_CLK (rise edge)                        8680.00    8680.00
+  clock network delay (ideal)                             0.00    8680.00
+  U1/UARTTX/U3/par_bit_reg/CK (DFFRX1M)                   0.00    8680.00 r
+  library setup time                                     -0.18    8679.82
+  data required time                                              8679.82
+  --------------------------------------------------------------------------
+  data required time                                              8679.82
+  data arrival time                                              -7597.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1082.48
+
+
+  Startpoint: SYNC_TX1/sync_bus_reg[6]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: U1/UARTTX/U3/par_bit_reg
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                        7595.00    7595.00
+  clock network delay (ideal)                             0.00    7595.00
+  SYNC_TX1/sync_bus_reg[6]/CK (DFFRQX2M)                  0.00    7595.00 r
+  SYNC_TX1/sync_bus_reg[6]/Q (DFFRQX2M)                   0.56    7595.56 r
+  SYNC_TX1/sync_bus[6] (DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0)
+                                                          0.00    7595.56 r
+  U1/P_DATA_TX[6] (UART)                                  0.00    7595.56 r
+  U1/UARTTX/P_DATA[6] (UART_TX)                           0.00    7595.56 r
+  U1/UARTTX/U3/P_DATA[6] (Parity_Calc)                    0.00    7595.56 r
+  U1/UARTTX/U3/U8/Y (CLKXOR2X2M)                          0.36    7595.92 f
+  U1/UARTTX/U3/U7/Y (XOR3XLM)                             0.46    7596.38 r
+  U1/UARTTX/U3/U5/Y (XOR3XLM)                             0.48    7596.85 f
+  U1/UARTTX/U3/U3/Y (OAI2BB2X1M)                          0.48    7597.34 r
+  U1/UARTTX/U3/par_bit_reg/D (DFFRX1M)                    0.00    7597.34 r
+  data arrival time                                               7597.34
+
+  clock UART_TX_CLK (rise edge)                        8680.00    8680.00
+  clock network delay (ideal)                             0.00    8680.00
+  U1/UARTTX/U3/par_bit_reg/CK (DFFRX1M)                   0.00    8680.00 r
+  library setup time                                     -0.18    8679.82
+  data required time                                              8679.82
+  --------------------------------------------------------------------------
+  data required time                                              8679.82
+  data arrival time                                              -7597.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1082.48
+
+
+  Startpoint: SYNC_TX1/sync_bus_reg[6]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: U1/UARTTX/U3/par_bit_reg
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                        7595.00    7595.00
+  clock network delay (ideal)                             0.00    7595.00
+  SYNC_TX1/sync_bus_reg[6]/CK (DFFRQX2M)                  0.00    7595.00 r
+  SYNC_TX1/sync_bus_reg[6]/Q (DFFRQX2M)                   0.56    7595.56 r
+  SYNC_TX1/sync_bus[6] (DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0)
+                                                          0.00    7595.56 r
+  U1/P_DATA_TX[6] (UART)                                  0.00    7595.56 r
+  U1/UARTTX/P_DATA[6] (UART_TX)                           0.00    7595.56 r
+  U1/UARTTX/U3/P_DATA[6] (Parity_Calc)                    0.00    7595.56 r
+  U1/UARTTX/U3/U8/Y (CLKXOR2X2M)                          0.36    7595.92 f
+  U1/UARTTX/U3/U7/Y (XOR3XLM)                             0.46    7596.38 r
+  U1/UARTTX/U3/U5/Y (XOR3XLM)                             0.48    7596.85 f
+  U1/UARTTX/U3/U3/Y (OAI2BB2X1M)                          0.48    7597.34 r
+  U1/UARTTX/U3/par_bit_reg/D (DFFRX1M)                    0.00    7597.34 r
+  data arrival time                                               7597.34
+
+  clock UART_TX_CLK (rise edge)                        8680.00    8680.00
+  clock network delay (ideal)                             0.00    8680.00
+  U1/UARTTX/U3/par_bit_reg/CK (DFFRX1M)                   0.00    8680.00 r
+  library setup time                                     -0.18    8679.82
+  data required time                                              8679.82
+  --------------------------------------------------------------------------
+  data required time                                              8679.82
+  data arrival time                                              -7597.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1082.48
+
+
+  Startpoint: SYNC_TX1/sync_bus_reg[6]
+              (rising edge-triggered flip-flop clocked by UART_RX_CLK)
+  Endpoint: U1/UARTTX/U3/par_bit_reg
+            (rising edge-triggered flip-flop clocked by UART_TX_CLK)
+  Path Group: UART_TX_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_RX_CLK (rise edge)                        7595.00    7595.00
+  clock network delay (ideal)                             0.00    7595.00
+  SYNC_TX1/sync_bus_reg[6]/CK (DFFRQX2M)                  0.00    7595.00 r
+  SYNC_TX1/sync_bus_reg[6]/Q (DFFRQX2M)                   0.56    7595.56 r
+  SYNC_TX1/sync_bus[6] (DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0)
+                                                          0.00    7595.56 r
+  U1/P_DATA_TX[6] (UART)                                  0.00    7595.56 r
+  U1/UARTTX/P_DATA[6] (UART_TX)                           0.00    7595.56 r
+  U1/UARTTX/U3/P_DATA[6] (Parity_Calc)                    0.00    7595.56 r
+  U1/UARTTX/U3/U8/Y (CLKXOR2X2M)                          0.36    7595.92 f
+  U1/UARTTX/U3/U7/Y (XOR3XLM)                             0.46    7596.38 r
+  U1/UARTTX/U3/U5/Y (XOR3XLM)                             0.48    7596.85 f
+  U1/UARTTX/U3/U3/Y (OAI2BB2X1M)                          0.48    7597.34 r
+  U1/UARTTX/U3/par_bit_reg/D (DFFRX1M)                    0.00    7597.34 r
+  data arrival time                                               7597.34
+
+  clock UART_TX_CLK (rise edge)                        8680.00    8680.00
+  clock network delay (ideal)                             0.00    8680.00
+  U1/UARTTX/U3/par_bit_reg/CK (DFFRX1M)                   0.00    8680.00 r
+  library setup time                                     -0.18    8679.82
+  data required time                                              8679.82
+  --------------------------------------------------------------------------
+  data required time                                              8679.82
+  data arrival time                                              -7597.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1082.48
+
+
+1

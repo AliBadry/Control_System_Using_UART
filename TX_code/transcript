@@ -1,0 +1,47 @@
+# vsim UART_TX_tb 
+# Start time: 14:30:26 on Sep 27,2022
+# Loading work.UART_TX_tb
+# Loading work.UART_TX
+# Loading work.FSM
+# Loading work.MUX4x1
+# Loading work.Parity_Calc
+# Loading work.Serializer
+add wave -position insertpoint sim:/UART_TX_tb/*
+run -all
+# Busy signal is LOW at idle state : success
+# TX OUT is HIGH in idle state: success
+# ----------------------------------------------------------
+# Busy signal is HIGH at start state : success
+# TX OUT is LOW in start state: success
+# ----------------------------------------------------------
+# Busy signal is HIGH at sending state : success
+# TX OUT is sending first bit in sending state: success
+# ----------------------------------------------------------
+# Busy signal is HIGH at sending state : success
+# TX OUT is sending last bit in sending state: success
+# ----------------------------------------------------------
+# Busy signal is HIGH at parity state : success
+# TX OUT is sending parity bit in parity state: success
+# ----------------------------------------------------------
+# Busy signal is HIGH at stop state : success
+# TX OUT is sending stop bit in stop state: success
+# Busy signal is HIGH at start state : success
+# TX OUT is LOW in start state: success
+# ----------------------------------------------------------
+# Busy signal is HIGH at sending state : success
+# TX OUT is sending first bit in sending state: success
+# ----------------------------------------------------------
+# Busy signal is HIGH at sending state : success
+# TX OUT is sending last bit in sending state: success
+# ----------------------------------------------------------
+# Busy signal is HIGH at parity state : success
+# TX OUT is sending parity bit in parity state: success
+# ----------------------------------------------------------
+# Busy signal is HIGH at stop state : success
+# TX OUT is sending stop bit in stop state: success
+# ** Note: $finish    : ./UART_TX_tb.v(360)
+#    Time: 177500 ps  Iteration: 0  Instance: /UART_TX_tb
+# 1
+# Break in Module UART_TX_tb at ./UART_TX_tb.v line 360
+# End time: 14:32:11 on Sep 27,2022, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 0

@@ -1,0 +1,19 @@
+Info:  Net Ref:/WORK/SYS_TOP/ASYNC_Busy is undriven.
+Info:  Multiple drivers on net Ref:/WORK/SYS_TOP/SYNC_Busy.
+Info:  Net Ref:/WORK/SYS_TOP/SO is undriven.
+Info:  Multiple drivers on net Ref:/WORK/UART/Busy.
+Info:  Multiple drivers on net Ref:/WORK/UART_TX/Busy.
+Info:  Multiple drivers on net Ref:/WORK/FSM_TX/busy.
+Info:  Multiple drivers on net Ref:/WORK/BIT_SYNC_NUM_STAGES2_BUS_WIDTH1/SYNC[0].
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW_div_uns_0/remainder[7] is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW_div_uns_0/remainder[6] is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW_div_uns_0/remainder[5] is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW_div_uns_0/remainder[4] is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW_div_uns_0/remainder[3] is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW_div_uns_0/remainder[2] is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW_div_uns_0/remainder[1] is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW_div_uns_0/remainder[0] is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW_div_uns_0/divide_by_0 is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW01_sub_0/CO is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW01_add_0/CO is undriven.
+Info:  Net Imp:/WORK/Arithmatic_Unit_Width16_DW01_add_1/CO is undriven.

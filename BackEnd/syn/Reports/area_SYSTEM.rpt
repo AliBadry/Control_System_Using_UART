@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : area
+Design : SYS_TOP
+Version: K-2015.06
+Date   : Thu Oct 13 18:52:58 2022
+****************************************
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_tt_1p2v_25c (File: /home/IC/Labs/LAST/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db)
+
+Number of ports:                          945
+Number of nets:                          2705
+Number of cells:                         1766
+Number of combinational cells:           1369
+Number of sequential cells:               357
+Number of macros/black boxes:               0
+Number of buf/inv:                        356
+Number of references:                      16
+
+Combinational area:              13219.047995
+Buf/Inv area:                     1907.430733
+Noncombinational area:            8103.932831
+Macro/Black Box area:                0.000000
+Net Interconnect area:          619223.084900
+
+Total cell area:                 21322.980826
+Total area:                     640546.065726
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ------------------------------------
+SYS_TOP                           21322.9808    100.0     37.6544     0.0000  0.0000  SYS_TOP
+ALU1                               7155.5127     33.6      8.2369     0.0000  0.0000  ALU
+ALU1/U1                              54.1282      0.3     54.1282     0.0000  0.0000  Decoder2X4
+ALU1/U2                            4946.8468     23.2    323.5925   465.9732  0.0000  Arithmatic_Unit_Width16
+ALU1/U2/add_20                      231.8099      1.1    231.8099     0.0000  0.0000  Arithmatic_Unit_Width16_DW01_add_0
+ALU1/U2/div_35                     1446.1643      6.8   1446.1643     0.0000  0.0000  Arithmatic_Unit_Width16_DW_div_uns_0
+ALU1/U2/mult_30                    2215.7261     10.4   1962.7356     0.0000  0.0000  Arithmatic_Unit_Width16_DW02_mult_0
+ALU1/U2/mult_30/FS_1                252.9905      1.2    252.9905     0.0000  0.0000  Arithmatic_Unit_Width16_DW01_add_1
+ALU1/U2/sub_25                      263.5808      1.2    263.5808     0.0000  0.0000  Arithmatic_Unit_Width16_DW01_sub_0
+ALU1/U3                             817.8065      3.8    377.7207   440.0858  0.0000  Logic_Unit_Width16
+ALU1/U4                             410.6683      1.9    333.0061    77.6622  0.0000  CMP_Unit_Width16
+ALU1/U5                             536.5752      2.5    277.7012   258.8740  0.0000  Shift_Unit_Width16
+ALU1/U6                               8.2369      0.0      8.2369     0.0000  0.0000  OR_Gate
+ALU1/U7                             373.0139      1.7    373.0139     0.0000  0.0000  Decoder2X4_ALU_OUT_Width16
+BUSY_SYNC1                           56.4816      0.3      4.7068    51.7748  0.0000  BIT_SYNC_NUM_STAGES2_BUS_WIDTH1_1
+CLK_Gate1                            36.4777      0.2     20.0039    16.4738  0.0000  CLK_Gate
+Data_Valid_TX_SYNC1                  51.7748      0.2      0.0000    51.7748  0.0000  BIT_SYNC_NUM_STAGES2_BUS_WIDTH1_0
+REG_FILE1                          6746.0211     31.6   3112.3716  3633.6496  0.0000  Reg_File
+RST_SYNC1                            51.7748      0.2      0.0000    51.7748  0.0000  RST_SYNC_1
+RST_SYNC2                            51.7748      0.2      0.0000    51.7748  0.0000  RST_SYNC_0
+SYNC_RX1                            425.9654      2.0    109.4331   316.5323  0.0000  DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_1
+SYNC_TX1                            420.0819      2.0    109.4331   310.6488  0.0000  DATA_SYNC_NUM_STAGES2_BUS_WIDTH8_0
+SYS_CTRL1                          2502.8409     11.7     20.0039     0.0000  0.0000  SYS_CTRL
+SYS_CTRL1/RX_Control               1150.8126      5.4    896.6454   254.1672  0.0000  Controller_FSM_RX
+SYS_CTRL1/TX_Control               1332.0244      6.2    600.1170   731.9074  0.0000  Controller_FSM_TX
+TX_DIV1                            1036.6727      4.9    464.7965   398.9013  0.0000  CLK_Divider
+TX_DIV1/sub_25                      172.9749      0.8    172.9749     0.0000  0.0000  CLK_Divider_DW01_sub_0
+U1                                 2749.9479     12.9      7.0602     0.0000  0.0000  UART
+U1/UARTRX                          2002.7434      9.4      8.2369     0.0000  0.0000  UART_RX
+U1/UARTRX/Check1                     14.1204      0.1     14.1204     0.0000  0.0000  Start_Check
+U1/UARTRX/Check2                    187.0953      0.9    161.2079    25.8874  0.0000  Parity_Check
+U1/UARTRX/Check3                     42.3612      0.2     42.3612     0.0000  0.0000  Stop_Check
+U1/UARTRX/Counter1                  408.3149      1.9    169.4448   238.8701  0.0000  Edge_Bit_Counter
+U1/UARTRX/Deserializer1             371.8372      1.7    156.5011   215.3361  0.0000  Deserializer
+U1/UARTRX/FSM1                      367.1304      1.7    263.5808   103.5496  0.0000  FSM_RX
+U1/UARTRX/Sample1                   603.6471      2.8    498.9208   104.7263  0.0000  Data_Sampling
+U1/UARTTX                           740.1443      3.5      8.2369     0.0000  0.0000  UART_TX
+U1/UARTTX/U1                        241.2235      1.1    128.2603   112.9632  0.0000  FSM_TX
+U1/UARTTX/U2                         60.0117      0.3     32.9476    27.0641  0.0000  MUX4x1
+U1/UARTTX/U3                        125.9069      0.6     98.8428    27.0641  0.0000  Parity_Calc
+U1/UARTTX/U4                        304.7653      1.4    168.2681   136.4972  0.0000  Serializer
+--------------------------------  ----------  -------  ----------  ---------  ------  ------------------------------------
+Total                                                  13219.0480  8103.9328  0.0000
+
+1

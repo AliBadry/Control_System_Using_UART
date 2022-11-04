@@ -1,0 +1,145 @@
+#@ # 
+#@ # Running fm_shell Version L-2016.03-SP1 for linux64 -- Apr 13, 2016
+#@ # Date:   Thu Oct 13 18:36:52 2022
+#@ # Run by: IC@IC
+#@ 
+
+source /opt/Synopsys/Formality2016/admin/setup/.synopsys_fm.setup
+#@ # -- Starting source /opt/Synopsys/Formality2016/admin/setup/.synopsys_fm.setup
+
+#@ #
+#@ # .synopsys_fm.setup: Initialization File for Formality
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparc" || $sh_arch == "sparcOS5" ||      $sh_arch == "hp700" || $sh_arch == "hpux10" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ 
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ # -- End source /opt/Synopsys/Formality2016/admin/setup/.synopsys_fm.setup
+
+source -echo -verbose fm_script.tcl
+#@ # -- Starting source fm_script.tcl
+
+#@ lappend search_path /home/IC/Labs/LAST/dft/Full_System
+#@ lappend search_path /home/IC/Labs/LAST/dft/Full_System/ALU
+#@ lappend search_path /home/IC/Labs/LAST/dft/Full_System/Controller
+#@ lappend search_path /home/IC/Labs/LAST/dft/Full_System/RX_code
+#@ lappend search_path /home/IC/Labs/LAST/dft/Full_System/TX_code
+#@ lappend search_path /home/IC/Labs/LAST/dft/Full_System/SYNC
+#@ lappend search_path /home/IC/Labs/LAST/std_cells
+#@ 
+#@ 
+#@ ############################## Formality Setup File ##############################
+#@ 
+#@ set SSLIB "/home/IC/Labs/LAST/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db"
+#@ set TTLIB "/home/IC/Labs/LAST/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db"
+#@ set FFLIB "/home/IC/Labs/LAST/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db"
+#@ 
+#@ set synopsys_auto_setup true
+#@ set_svf "/home/IC/Labs/LAST/dft/default.svf"
+#@ 
+#@ ## Read Reference Design Files
+#@ 
+#@ read_db -container Ref [list $SSLIB $TTLIB $FFLIB]
+#@ read_verilog -container Ref "/home/IC/Labs/LAST/dft/Full_System/*.v"
+#@ read_verilog -container Ref "/home/IC/Labs/LAST/dft/Full_System/ALU/*.v"
+#@ read_verilog -container Ref "/home/IC/Labs/LAST/dft/Full_System/Controller/*.v"
+#@ read_verilog -container Ref "/home/IC/Labs/LAST/dft/Full_System/RX_code/*.v"
+#@ read_verilog -container Ref "/home/IC/Labs/LAST/dft/Full_System/TX_code/*.v"
+#@ read_verilog -container Ref "/home/IC/Labs/LAST/dft/Full_System/SYNC/*.v"
+#@ 
+#@ 
+#@ ## set the top Reference Design 
+#@ 
+#@ set_reference_design SYS_TOP
+#@ set_top SYS_TOP
+#@ 
+#@ ## Read Implementation technology libraries
+#@ 
+#@ read_db -container Imp [list $SSLIB $TTLIB $FFLIB]
+#@ 
+#@ ## Read Implementation Design Files
+#@ 
+#@ 
+#@ read_verilog -container Imp -netlist "/home/IC/Labs/LAST/dft/GLN/System_GLNet.v"
+#@ 
+#@ ## set the top Implementation Design
+#@ 
+#@ set_implementation_design SYS_TOP
+#@ set_top SYS_TOP
+#@ 
+#@ ############################### Don't verify #################################
+#@ 
+#@ # do not verify scan in & scan out ports as a compare point as it is existed only after synthesis and not existed in the RTL
+#@ 
+#@ #scan in
+#@ set_dont_verify_points -type port Ref:/WORK/*/SI
+#@ set_dont_verify_points -type port Imp:/WORK/*/SI
+#@ 
+#@ #scan_out
+#@ set_dont_verify_points -type port Ref:/WORK/*/SO
+#@ set_dont_verify_points -type port Imp:/WORK/*/SO
+#@ 
+#@ ############################### contants #####################################
+#@ 
+#@ # all atpg enable(test_mode, scan_enable) are zero during formal compare
+#@ 
+#@ #test_mode
+#@ set_constant Ref:/WORK/*/test_mode 0
+#@ set_constant Imp:/WORK/*/test_mode 0
+#@ 
+#@ #scan_enable
+#@ set_constant Ref:/WORK/*/SE 0
+#@ set_constant Imp:/WORK/*/SE 0
+#@ 
+#@ ## matching Compare points
+#@ 
+#@ match
+#@ 
+#@ ## verify
+#@ set successful [verify]
+#@ if {!$successful} {
+#@ diagnose
+#@ analyze_points -failing
+#@ }
+#@ 
+#@ #Reports
+#@ report_passing_points > "Reports/passing_points.rpt"
+#@ report_failing_points > "Reports/failing_points.rpt"
+#@ report_aborted_points > "Reports/aborted_points.rpt"
+#@ report_unverified_points > "Reports/unverified_points.rpt"
+#@ 
+#@ 
+#@ start_gui
+#@ # -- End source fm_script.tcl
+
